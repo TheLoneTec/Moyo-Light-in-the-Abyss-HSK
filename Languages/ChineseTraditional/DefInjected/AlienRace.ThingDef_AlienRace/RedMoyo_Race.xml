@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Alien_RedMoyo.label>深淵茉約</Alien_RedMoyo.label>
+  <Alien_RedMoyo.description>深海茉約族的亞種,由於其發光器官因變異發出紅光因此也會被稱為紅茉約,通常是茉約族女性被感染深淵病毒的生物授精後產下的後代. \n\n 由於共生病毒的影響使得大多數深淵茉約都有奇怪的性格,但實際上她們並不壞.</Alien_RedMoyo.description>
+  <Alien_RedMoyo.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>膚色</Alien_RedMoyo.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
+  <Alien_RedMoyo.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>髮色</Alien_RedMoyo.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>
+  <Alien_RedMoyo.tools.0.label>左拳</Alien_RedMoyo.tools.0.label>
+  <Alien_RedMoyo.tools.1.label>右拳</Alien_RedMoyo.tools.1.label>
+  <Alien_RedMoyo.tools.2.label>牙齒</Alien_RedMoyo.tools.2.label>
+  <Alien_RedMoyo.tools.3.label>頭</Alien_RedMoyo.tools.3.label>
+
+
+
+</LanguageData>

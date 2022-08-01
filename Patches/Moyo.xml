@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+		
+				 <li Class="PatchOperationAdd">
+                    <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_Moyo"]/alienRace/raceRestriction/apparelList</xpath>
+                    <value>
+					<li>RedMoyo_BodyStrap</li>
+					<li>RedMoyo_BobySuit</li>
+					<li>RedMoyo_TacticalStrap</li>
+					<li>RedMoyo_PoliceUniform</li>
+					<li>RedMoyo_HoloCamisole</li>
+					<li>RedMoyo_ExoSkeleton</li>
+					<li>RedMoyo_WorkSuit</li>
+					<li>RedMoyo_OfficerCape</li>
+					<li>RedMoyo_TacticalGears</li>
+					<li>RedMoyo_Helmet</li>
+					<li>RedMoyo_PanHat</li>
+					<li>RedMoyo_MeleeMask</li>
+					<li>RedMoyo_SniperMask</li>
+					<li>RedMoyo_GasMask</li>
+					<li>RedMoyo_TacticalHeadSet</li>
+					<li>RedMoyo_AbyssArmour</li>
+					<li>RedMoyo_AbyssHelmet</li>
+                    </value>
+                </li>
+				<li Class="PatchOperationAdd">
+                    <xpath>Defs/RecipeDef[defName="Extract_DeepBlueCorpse"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+					  <li>Meat_Alien_RedMoyo</li>
+					</value>
+                </li>
+            </operations>
+    </Operation>
+</Patch>

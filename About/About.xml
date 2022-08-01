@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ModMetaData>
+	<name>Moyo-Light in the Abyss HSK</name>
+	<author>AOBA</author>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	<packageId>AOBA.RedMoyo.HSK</packageId>
+	<description>
+	
+From the bottom of the abyss, there lives a subspecies of Moyo,  called Red Moyo because it emits a red shimmer that is different from ordinary Moyo.
+Their origin is not clear, but because their original living environment is located in the underwater abyss full of dangerous water pressure and huge monsters, they are also called abyss Moyo 
+
+Since the turbulent times caused by internal disputes in the Deep Sea, a considerable number of Abyss Moyos have overcome decompression sickness and come to land and established colonies around the ships that landed.
+Since no one knew much about them in the past, and the reason for their massive landing is unknown, take care of your own safety when approaching them.
+=Overview=
+First of all, I would like to thank Némonian for authorizing me to make the fan mod of Moyo (also made the preview art) and introduce Moyo's close relatives at the bottom of the extreme deep sea.
+
+= About Red Moyo =
+The subspecies of the Moyo race, compared to Moyo's environment in the abyss, make their technology more reliable and practical, but because they have not been on land for a long time, they might not be very adapted to the light.
+They are bad at mental sensitivity, probably because of the mutation on their gene.
+Compared with the Moyo, it is stronger and has a higher natural resilience.
+Not good at socializing, but work faster than Moyo
+High-temperature adaptability is high, but low-temperature adaptability is very poor.
+
+	-
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>Nemonian.MY.HSK</packageId>
+			<displayName>Moyo-From the depth HSK</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2182305386</steamWorkshopUrl>
+		</li>		
+	</modDependencies>
+	<loadAfter>
+		<li>goudaquiche.MoharFramework</li>
+		<li>Nemonian.MY.HSK</li>
+	</loadAfter>
+</ModMetaData>

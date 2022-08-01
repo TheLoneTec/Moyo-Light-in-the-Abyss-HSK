@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<RedMoyo_Job_Fabrication.label>制造物品</RedMoyo_Job_Fabrication.label>
+  <RedMoyo_Job_Fabrication.verb>制造</RedMoyo_Job_Fabrication.verb>
+  <RedMoyo_Job_Fabrication.gerund>制造物品于</RedMoyo_Job_Fabrication.gerund>
+
+  <RedMoyo_Job_Polymerization.label>聚合物质</RedMoyo_Job_Polymerization.label>
+  <RedMoyo_Job_Polymerization.verb>聚合</RedMoyo_Job_Polymerization.verb>
+  <RedMoyo_Job_Polymerization.gerund>聚合物质于</RedMoyo_Job_Polymerization.gerund>
+
+</LanguageData>

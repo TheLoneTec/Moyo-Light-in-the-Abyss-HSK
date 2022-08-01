@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+	<operations>
+	  <li Class="PatchOperationFindMod">
+			
+		<mods><li>Moyo-Light in the Abyss HSK</li></mods>
+			
+		<match Class="PatchOperationSequence">
+		<operations>
+		
+			<li Class="PatchOperationAdd">
+			<xpath>Defs/ArchitectSense.DesignationSubCategoryDef[defName="Moyo_Production"]/defNames</xpath>
+				<value>
+					<li>RedMoyo_FabricationBench</li>
+					<li>RedMoyo_PolymerizationBench</li>
+				</value>
+			</li>
+		
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="RedMoyo_FabricationBench"]/costList</xpath>
+				<value>
+				<costList>
+					<Moyo_Abyssteel>25</Moyo_Abyssteel>
+					<SyntheticFibers>45</SyntheticFibers>
+					<Electronics>10</Electronics>
+					<ComponentIndustrial>15</ComponentIndustrial>
+					<Mechanism>10</Mechanism>
+				</costList>
+				</value>
+			</li>
+				
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="RedMoyo_FabricationBench"]</xpath>
+				<value>
+				<stuffCategories>
+					<li>StrongMetallic</li>
+				</stuffCategories>
+				<costStuffCount>75</costStuffCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="RedMoyo_PolymerizationBench"]/costList</xpath>
+				<value>
+				<costList>
+					<Moyo_Abyssteel>250</Moyo_Abyssteel>
+					<SyntheticFibers>25</SyntheticFibers>
+					<Electronics>5</Electronics>
+					<ComponentIndustrial>8</ComponentIndustrial>
+					<Mechanism>6</Mechanism>
+				</costList>
+				</value>
+			</li>
+				
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="RedMoyo_PolymerizationBench"]</xpath>
+				<value>
+				<stuffCategories>
+					<li>StrongMetallic</li>
+				</stuffCategories>
+				<costStuffCount>100</costStuffCount>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="RedMoyo_GeothermalGenerator"]/costList</xpath>
+				<value>
+				<costList>
+					<Moyo_Abyssteel>300</Moyo_Abyssteel>
+					<ReinforcedConcrete>60</ReinforcedConcrete>
+					<Rubber>40</Rubber>
+					<Electronics>12</Electronics>
+					<Mechanism>8</Mechanism>
+				</costList>
+				</value>
+			</li>
+				<!--
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="RedMoyo_GeothermalGenerator"]</xpath>
+				<value>
+				<stuffCategories>
+					<li>StrongMetallic</li>
+				</stuffCategories>
+				<costStuffCount>200</costStuffCount>
+				</value>
+			</li>
+			-->
+
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="RedMoyo_GeothermalGenerator"]/researchPrerequisites</xpath>
+				<value>
+					<researchPrerequisites Inherit="False">
+						<li>GeothermalPower</li>
+					</researchPrerequisites>
+				</value>
+			</li>
+			
+		</operations>
+		</match>	
+	  </li>
+	</operations>	
+  </Operation>
+</Patch>

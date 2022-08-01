@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+ <!-- 深海战术刀 -->
+
+  <RedMoyo_Knife.label>深海战术刀</RedMoyo_Knife.label>
+  <RedMoyo_Knife.description>A knife is always handy to have, and under the sea is no exception. The sharp and light blade made from plasteel is a favorite among moyo divers.</RedMoyo_Knife.description>
+  <RedMoyo_Knife.tools.0.label>握把</RedMoyo_Knife.tools.0.label>
+  <RedMoyo_Knife.tools.1.label>刀刃</RedMoyo_Knife.tools.1.label>
+  <RedMoyo_Knife.tools.2.label>刀尖</RedMoyo_Knife.tools.2.label>
+
+
+  <!-- 深海动能钳 -->
+
+  <RedMoyo_KineticClamp.label>深海动能钳</RedMoyo_KineticClamp.label>
+  <RedMoyo_KineticClamp.description>Kinetic tongs powered by gunpowder, a perfect tool for ship breakers.</RedMoyo_KineticClamp.description>
+  <RedMoyo_KineticClamp.tools.0.label>钳身</RedMoyo_KineticClamp.tools.0.label>
+  <RedMoyo_KineticClamp.tools.1.label>钳刃</RedMoyo_KineticClamp.tools.1.label>
+
+
+  <!-- 深海鱼叉 -->
+
+  <RedMoyo_AlloyHarpoon.label>深海鱼叉</RedMoyo_AlloyHarpoon.label>
+  <RedMoyo_AlloyHarpoon.description>Deep sea alloy harpoon, capable of piercing the scales of small abyss fish.</RedMoyo_AlloyHarpoon.description>
+  <RedMoyo_AlloyHarpoon.tools.0.label>握把</RedMoyo_AlloyHarpoon.tools.0.label>
+  <RedMoyo_AlloyHarpoon.tools.1.label>鱼叉</RedMoyo_AlloyHarpoon.tools.1.label>
+
+  <RedMoyo_PlasmaHarpoon.label>深海等离子鱼叉</RedMoyo_PlasmaHarpoon.label>
+  <RedMoyo_PlasmaHarpoon.description>Harpoon with heated abyss steal blade, capable of piercing the scales of most abyss creatures.</RedMoyo_PlasmaHarpoon.description>
+  <RedMoyo_PlasmaHarpoon.tools.0.label>握把</RedMoyo_PlasmaHarpoon.tools.0.label>
+  <RedMoyo_PlasmaHarpoon.tools.1.label>鱼叉</RedMoyo_PlasmaHarpoon.tools.1.label>
+
+  <MeleeWeapon_PlasmaTachi.label>深海等离子太刀</MeleeWeapon_PlasmaTachi.label>
+  <MeleeWeapon_PlasmaTachi.description>An oversized katana with heated abyss steal blade,In the past such weapons were seen as a symbol of Abyss moyo's autonomous industrial capabilities.and was used by abyss forces on a large scale</MeleeWeapon_PlasmaTachi.description>
+  <MeleeWeapon_PlasmaTachi.tools.0.label>握把</MeleeWeapon_PlasmaTachi.tools.0.label>
+  <MeleeWeapon_PlasmaTachi.tools.1.label>剑尖</MeleeWeapon_PlasmaTachi.tools.1.label>
+  <MeleeWeapon_PlasmaTachi.tools.2.label>剑刃</MeleeWeapon_PlasmaTachi.tools.2.label>
+
+
+  <!-- 子弹 -->
+
+  <Bullet_RedMoyoSmall.label>小型等离子弹栓</Bullet_RedMoyoSmall.label>
+  <Bullet_RedMoyoMedium.label>等离子弹栓</Bullet_RedMoyoMedium.label>
+  <Bullet_RedMoyoLarge.label>重型等离子弹栓</Bullet_RedMoyoLarge.label>
+
+
+  <!-- 深海防卫手枪 -->
+
+  <RedMoyo_Pistol.label>深海防卫手枪</RedMoyo_Pistol.label>
+  <RedMoyo_Pistol.description>常见于深渊茉约装备的小型手枪</RedMoyo_Pistol.description>
+  <RedMoyo_Pistol.tools.0.label>枪托</RedMoyo_Pistol.tools.0.label>
+  <RedMoyo_Pistol.tools.1.label>枪管</RedMoyo_Pistol.tools.1.label>
+
+
+  <!-- 深海防卫步枪 -->
+
+  <RedMoyo_CivilAR.label>深海防卫步枪</RedMoyo_CivilAR.label>
+  <RedMoyo_CivilAR.description>拓展枪托的防卫手枪,经常用于狩猎与民用防卫.</RedMoyo_CivilAR.description>
+  <RedMoyo_CivilAR.tools.0.label>枪托</RedMoyo_CivilAR.tools.0.label>
+  <RedMoyo_CivilAR.tools.1.label>枪管</RedMoyo_CivilAR.tools.1.label>
+
+
+  <!-- 深海警用手枪 -->
+
+  <RedMoyo_PistolPolice.label>深海警用手枪</RedMoyo_PistolPolice.label>
+  <RedMoyo_PistolPolice.description>a high-power pistol for red moyo armed forces and law enforcement agencies</RedMoyo_PistolPolice.description>
+  <RedMoyo_PistolPolice.tools.0.label>枪托</RedMoyo_PistolPolice.tools.0.label>
+  <RedMoyo_PistolPolice.tools.1.label>枪管</RedMoyo_PistolPolice.tools.1.label>
+
+
+  <!-- 深海警用冲锋枪 -->
+
+  <RedMoyo_SMG.label>深海警用冲锋枪</RedMoyo_SMG.label>
+  <RedMoyo_SMG.description>Small submachine gun for in-cabin combat</RedMoyo_SMG.description>
+  <RedMoyo_SMG.tools.0.label>枪托</RedMoyo_SMG.tools.0.label>
+  <RedMoyo_SMG.tools.1.label>枪管</RedMoyo_SMG.tools.1.label>
+
+
+  <!-- 深海军用步枪 -->
+
+  <RedMoyo_MilitaryAR.label>深海军用步枪</RedMoyo_MilitaryAR.label>
+  <RedMoyo_MilitaryAR.description>A general-purpose assault rifle for red moyo armed forces, It has good range, decent power, and good accuracy.</RedMoyo_MilitaryAR.description>
+  <RedMoyo_MilitaryAR.tools.0.label>枪托</RedMoyo_MilitaryAR.tools.0.label>
+  <RedMoyo_MilitaryAR.tools.1.label>等离子刺刀</RedMoyo_MilitaryAR.tools.1.label>
+
+
+  <!-- 深海精确步枪 -->
+
+  <RedMoyo_MilitarySR.label>深海精确步枪</RedMoyo_MilitarySR.label>
+  <RedMoyo_MilitarySR.description>A sniper rifle that can barely penetrate the shell of abyssal creatures at long distances</RedMoyo_MilitarySR.description>
+  <RedMoyo_MilitarySR.tools.0.label>枪托</RedMoyo_MilitarySR.tools.0.label>
+  <RedMoyo_MilitarySR.tools.1.label>枪管</RedMoyo_MilitarySR.tools.1.label>
+
+
+  <!-- 深海重型步枪 -->
+
+  <RedMoyo_MilitaryHeavyRifle.label>深海重型步枪</RedMoyo_MilitaryHeavyRifle.label>
+  <RedMoyo_MilitaryHeavyRifle.description>A red moyo versioned large accelerator made to fight off the leviathans that threaten their mothership..</RedMoyo_MilitaryHeavyRifle.description>
+  <RedMoyo_MilitaryHeavyRifle.tools.0.label>枪身</RedMoyo_MilitaryHeavyRifle.tools.0.label>
+  <RedMoyo_MilitaryHeavyRifle.tools.1.label>枪管</RedMoyo_MilitaryHeavyRifle.tools.1.label>
+
+
+</LanguageData>

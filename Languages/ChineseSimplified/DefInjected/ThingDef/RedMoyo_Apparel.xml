@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+ <!-- 深海拘束带 -->
+
+  <RedMoyo_BodyStrap.label>深海拘束带</RedMoyo_BodyStrap.label>
+  <RedMoyo_BodyStrap.description>用于拘束奴隶的绑带装,并预留了牵引与多人连缚用的金属环.</RedMoyo_BodyStrap.description>
+
+
+  <!-- 深海紧身衣 -->
+
+  <RedMoyo_BobySuit.label>深海紧身衣</RedMoyo_BobySuit.label>
+  <RedMoyo_BobySuit.description>用于保护茉约于环境温度的贴身衣物.</RedMoyo_BobySuit.description>
+
+
+  <!-- 深海战术带 -->
+
+  <RedMoyo_TacticalStrap.label>深海战术绑带</RedMoyo_TacticalStrap.label>
+  <RedMoyo_TacticalStrap.description>深海军事单位的制式全身战术带，能在不阻碍行动的状况下配戴辅助用品</RedMoyo_TacticalStrap.description>
+
+
+  <!-- 深海警察服 -->
+
+  <RedMoyo_PoliceUniform.label>深海警服</RedMoyo_PoliceUniform.label>
+  <RedMoyo_PoliceUniform.description>深渊制式警服,能够抵御一些小型生物的撕咬与小口径枪击.</RedMoyo_PoliceUniform.description>
+
+
+  <!-- 深海投影服 -->
+
+  <RedMoyo_HoloCamisole.label>深海投影服</RedMoyo_HoloCamisole.label>
+  <RedMoyo_HoloCamisole.description>使用深海技术制造的可穿戴立场投影投射器,为了避免穿戴者感觉没有穿衣服而害羞附赠了一双过携袜.</RedMoyo_HoloCamisole.description>
+
+
+  <!-- 深海外骨骼动力服 -->
+
+  <RedMoyo_ExoSkeleton.label>深海外骨骼动力服</RedMoyo_ExoSkeleton.label>
+  <RedMoyo_ExoSkeleton.description>直连神经控制的外骨骼动力装置,能够极大加强穿戴者的机动性,然而因为反馈系统的直连因此当服装受损时也会受到痛苦.</RedMoyo_ExoSkeleton.description>
+
+
+  <!-- 深海工作服 -->
+
+  <RedMoyo_WorkSuit.label>深海工作服</RedMoyo_WorkSuit.label>
+  <RedMoyo_WorkSuit.description>为深海工程人员设计的吊带式工作服,有许多方便放东西的口袋..</RedMoyo_WorkSuit.description>
+
+
+  <!-- 斗篷 -->
+
+  <RedMoyo_OfficerCape.label>深海军官斗篷.</RedMoyo_OfficerCape.label>
+  <RedMoyo_OfficerCape.description>深渊军事力量制式的军官服装,除了如同防弹衣的性能外最重要的还是帅气..</RedMoyo_OfficerCape.description>
+
+
+  <!-- 战术装具 -->
+
+  <RedMoyo_TacticalGears.label>深海战术装具</RedMoyo_TacticalGears.label>
+  <RedMoyo_TacticalGears.description>Standard tactical equipment for abyss military units, including integrated bulletproof breastplates and straps mounted with various combat equipment</RedMoyo_TacticalGears.description>
+
+
+  <!-- 军用头盔 -->
+
+  <RedMoyo_Helmet.label>深海军用头盔</RedMoyo_Helmet.label>
+  <RedMoyo_Helmet.description>A lightweight combat helmet for moyo marines.</RedMoyo_Helmet.description>
+
+
+  <!-- 深海警帽 -->
+
+  <RedMoyo_PanHat.label>深海警帽</RedMoyo_PanHat.label>
+  <RedMoyo_PanHat.description>A form of headgear worn by armed forces and law enforcement agencies in moyo society. decrease social impact.</RedMoyo_PanHat.description>
+
+
+  <!-- 深海防弹目镜 -->
+
+  <RedMoyo_MeleeMask.label>深海防弹目镜</RedMoyo_MeleeMask.label>
+  <RedMoyo_MeleeMask.description>A mask that protect eyes in close combat.</RedMoyo_MeleeMask.description>
+
+
+  <!-- 深海狙击目镜 -->
+
+  <RedMoyo_SniperMask.label>深海狙击目镜</RedMoyo_SniperMask.label>
+  <RedMoyo_SniperMask.description>拥有内建射控辅助系统的全覆式面罩</RedMoyo_SniperMask.description>
+
+
+  <!-- 防毒面具，毒物敏感度减少0.95% -->
+
+  <RedMoyo_GasMask.label>深渊防毒面具</RedMoyo_GasMask.label>
+  <RedMoyo_GasMask.description>侵入式设计的防毒面具,能够有效的抵御有毒物质的侵入....但戴着就是不舒服.</RedMoyo_GasMask.description>
+
+
+  <!-- 战术耳机 RedMoyo_TacticalHeadSet -->
+
+  <RedMoyo_TacticalHeadSet.label>深海战术耳机</RedMoyo_TacticalHeadSet.label>
+  <RedMoyo_TacticalHeadSet.description>The tactical headset of the armed forces and law enforcement agencies, in addition to being able to communicate remotely, can also reduce mental sensitivity by playing specific audio</RedMoyo_TacticalHeadSet.description>
+
+
+  <!-- 深渊装甲服 -->
+
+  <RedMoyo_AbyssArmour.label>深渊装甲服</RedMoyo_AbyssArmour.label>
+  <RedMoyo_AbyssArmour.description>Heavy diving gear modified from abysstech diving gear, exceptionally tough.</RedMoyo_AbyssArmour.description>
+
+
+  <!-- 深渊装甲盔 -->
+
+  <RedMoyo_AbyssHelmet.label>深渊装甲盔</RedMoyo_AbyssHelmet.label>
+  <RedMoyo_AbyssHelmet.description>Helmet paired with the Abyss diving suit.</RedMoyo_AbyssHelmet.description>
+
+</LanguageData>

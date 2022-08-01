@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		
+		<operations>
+			<li Class="PatchOperationFindMod">
+			<mods><li>Moyo-Light in the Abyss HSK</li></mods>
+			<match Class="PatchOperationSequence">
+			<operations>
+			
+			<!-- ==========  Depthweave  =========== -->
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="Make_RedMoyo_Depthweave"]/ingredients</xpath>
+				<value>
+					<ingredients>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>AbyssSerum</li>
+								</thingDefs>
+							</filter>
+							<count>5</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Cloth</li>
+								</thingDefs>
+							</filter>
+							<count>50</count>
+						</li>
+						<li>
+							<filter>
+								<thingDefs>
+									<li>Plasteel</li>
+								</thingDefs>
+							</filter>
+							<count>20</count>
+						</li>			
+					</ingredients>
+				</value>
+			</li>
+			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/RecipeDef[defName="Make_Moyo_Depthweave"]/fixedIngredientFilter</xpath>
+				<value>
+					<fixedIngredientFilter>
+						<thingDefs>
+							<li>AbyssSerum</li>
+							<li>Cloth</li>
+							<li>Plasteel</li>
+						</thingDefs>	
+					</fixedIngredientFilter>
+				</value>
+			</li>		
+			
+			</operations>
+			</match>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
