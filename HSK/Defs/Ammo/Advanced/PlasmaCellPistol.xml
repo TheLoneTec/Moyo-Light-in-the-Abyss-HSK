@@ -61,7 +61,7 @@
 
 	<!-- ================== Projectiles ================== -->
 
-	<ThingDef ParentName="BaseBullet">
+	<ThingDef ParentName="SK_BaseBullet">
 		<defName>Bullet_PlasmaCellPistol</defName>
 		<label>Plasma Bolt</label>
 		<graphicData>
