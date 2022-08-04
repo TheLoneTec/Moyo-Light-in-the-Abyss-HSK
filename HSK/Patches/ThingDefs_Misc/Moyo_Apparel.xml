@@ -817,7 +817,7 @@
 			</li>
 			
 			<li Class="PatchOperationReplace">
-				<xpath>Defs/ThingDef[defName="RedMoyo_AbyssArmour"]/costList</xpath>
+				<xpath>Defs/ThingDef[defName="RedMoyo_AbyssHelmet"]/costList</xpath>
 				<value>
 					<costList>
 						<ComponentSpacer>3</ComponentSpacer>
@@ -833,7 +833,7 @@
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="RedMoyo_AbyssArmour"]</xpath>
+				<xpath>Defs/ThingDef[defName="RedMoyo_AbyssHelmet"]</xpath>
 				<value>
 					<stuffCategories>
 						<li>HF</li>
@@ -843,7 +843,7 @@
 			</li>
 			
 			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName="RedMoyo_AbyssArmour"]/apparel/tags</xpath>
+				<xpath>Defs/ThingDef[defName="RedMoyo_AbyssHelmet"]/apparel/tags</xpath>
 				<value>
 					<li>EVA</li>
 				</value>
