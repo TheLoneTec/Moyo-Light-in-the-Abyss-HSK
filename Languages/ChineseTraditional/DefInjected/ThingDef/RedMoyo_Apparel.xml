@@ -52,25 +52,25 @@
   <!-- 戰術裝具 -->
 
   <RedMoyo_TacticalGears.label>深海戰術裝具</RedMoyo_TacticalGears.label>
-  <RedMoyo_TacticalGears.description>Standard tactical equipment for abyss military units, including integrated bulletproof breastplates and straps mounted with various combat equipment</RedMoyo_TacticalGears.description>
+  <RedMoyo_TacticalGears.description>深海軍事單位的制式個人裝具,包含了一個內置的防彈胸甲與掛載的戰鬥裝備.</RedMoyo_TacticalGears.description>
 
 
   <!-- 軍用頭盔 -->
 
   <RedMoyo_Helmet.label>深海軍用頭盔</RedMoyo_Helmet.label>
-  <RedMoyo_Helmet.description>A lightweight combat helmet for moyo marines.</RedMoyo_Helmet.description>
+  <RedMoyo_Helmet.description>深淵茉約海軍陸戰隊的制式輕量化鋼盔.</RedMoyo_Helmet.description>
 
 
   <!-- 深海警帽 -->
 
   <RedMoyo_PanHat.label>深海警帽</RedMoyo_PanHat.label>
-  <RedMoyo_PanHat.description>A form of headgear worn by armed forces and law enforcement agencies in moyo society. decrease social impact.</RedMoyo_PanHat.description>
+  <RedMoyo_PanHat.description>深淵茉約 警務人員與民兵配戴的勤務帽.雖然他們是為解決問題而出現,但大多數時候卻被人視為問題的來源.</RedMoyo_PanHat.description>
 
 
   <!-- 深海防彈目鏡 -->
 
   <RedMoyo_MeleeMask.label>深海防彈目鏡</RedMoyo_MeleeMask.label>
-  <RedMoyo_MeleeMask.description>A mask that protect eyes in close combat.</RedMoyo_MeleeMask.description>
+  <RedMoyo_MeleeMask.description>在近距離戰鬥時保護眼睛的金屬眼罩.</RedMoyo_MeleeMask.description>
 
 
   <!-- 深海狙擊目鏡 -->
@@ -88,19 +88,19 @@
   <!-- 戰術耳機 RedMoyo_TacticalHeadSet -->
 
   <RedMoyo_TacticalHeadSet.label>深海戰術耳機</RedMoyo_TacticalHeadSet.label>
-  <RedMoyo_TacticalHeadSet.description>The tactical headset of the armed forces and law enforcement agencies, in addition to being able to communicate remotely, can also reduce mental sensitivity by playing specific audio</RedMoyo_TacticalHeadSet.description>
+  <RedMoyo_TacticalHeadSet.description>常見於深淵警務人員與軍方觀察員的複合戰術耳機,能夠遠程提供交涉方針並也能夠透過播放特定音頻來降低心靈脈衝帶來的焦慮.</RedMoyo_TacticalHeadSet.description>
 
 
   <!-- 深淵裝甲服 -->
 
   <RedMoyo_AbyssArmour.label>深淵裝甲服</RedMoyo_AbyssArmour.label>
-  <RedMoyo_AbyssArmour.description>Heavy diving gear modified from abysstech diving gear, exceptionally tough.</RedMoyo_AbyssArmour.description>
+  <RedMoyo_AbyssArmour.description>改良自深海潛水服以對抗深淵水壓的重型潛水服,當然的也有極強的防禦能力.</RedMoyo_AbyssArmour.description>
 
 
   <!-- 深淵裝甲盔 -->
 
   <RedMoyo_AbyssHelmet.label>深淵裝甲盔</RedMoyo_AbyssHelmet.label>
-  <RedMoyo_AbyssHelmet.description>Helmet paired with the Abyss diving suit.</RedMoyo_AbyssHelmet.description>
+  <RedMoyo_AbyssHelmet.description>改良自深海潛水盔以對抗深淵水壓的重型潛水頭盔,當然的也有極強的防禦能力</RedMoyo_AbyssHelmet.description>
 
 
 </LanguageData>

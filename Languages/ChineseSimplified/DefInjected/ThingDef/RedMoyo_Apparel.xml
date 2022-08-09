@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
- <!-- 深海拘束带 -->
+  <!-- 深海拘束带 -->
 
   <RedMoyo_BodyStrap.label>深海拘束带</RedMoyo_BodyStrap.label>
   <RedMoyo_BodyStrap.description>用于拘束奴隶的绑带装,并预留了牵引与多人连缚用的金属环.</RedMoyo_BodyStrap.description>
@@ -52,25 +52,25 @@
   <!-- 战术装具 -->
 
   <RedMoyo_TacticalGears.label>深海战术装具</RedMoyo_TacticalGears.label>
-  <RedMoyo_TacticalGears.description>Standard tactical equipment for abyss military units, including integrated bulletproof breastplates and straps mounted with various combat equipment</RedMoyo_TacticalGears.description>
+  <RedMoyo_TacticalGears.description>深海军事单位的制式个人装具,包含了一个内置的防弹胸甲与挂载的战斗装备.</RedMoyo_TacticalGears.description>
 
 
   <!-- 军用头盔 -->
 
   <RedMoyo_Helmet.label>深海军用头盔</RedMoyo_Helmet.label>
-  <RedMoyo_Helmet.description>A lightweight combat helmet for moyo marines.</RedMoyo_Helmet.description>
+  <RedMoyo_Helmet.description>深渊茉约海军陆战队的制式轻量化钢盔.</RedMoyo_Helmet.description>
 
 
   <!-- 深海警帽 -->
 
   <RedMoyo_PanHat.label>深海警帽</RedMoyo_PanHat.label>
-  <RedMoyo_PanHat.description>A form of headgear worn by armed forces and law enforcement agencies in moyo society. decrease social impact.</RedMoyo_PanHat.description>
+  <RedMoyo_PanHat.description>深渊茉约 警务人员与民兵配戴的勤务帽.虽然他们是为解决问题而出现,但大多数时候却被人视为问题的来源.</RedMoyo_PanHat.description>
 
 
   <!-- 深海防弹目镜 -->
 
   <RedMoyo_MeleeMask.label>深海防弹目镜</RedMoyo_MeleeMask.label>
-  <RedMoyo_MeleeMask.description>A mask that protect eyes in close combat.</RedMoyo_MeleeMask.description>
+  <RedMoyo_MeleeMask.description>在近距离战斗时保护眼睛的金属眼罩.</RedMoyo_MeleeMask.description>
 
 
   <!-- 深海狙击目镜 -->
@@ -88,18 +88,19 @@
   <!-- 战术耳机 RedMoyo_TacticalHeadSet -->
 
   <RedMoyo_TacticalHeadSet.label>深海战术耳机</RedMoyo_TacticalHeadSet.label>
-  <RedMoyo_TacticalHeadSet.description>The tactical headset of the armed forces and law enforcement agencies, in addition to being able to communicate remotely, can also reduce mental sensitivity by playing specific audio</RedMoyo_TacticalHeadSet.description>
+  <RedMoyo_TacticalHeadSet.description>常见于深渊警务人员与军方观察员的复合战术耳机,能够远程提供交涉方针并也能够透过播放特定音频来降低心灵脉冲带来的焦虑.</RedMoyo_TacticalHeadSet.description>
 
 
   <!-- 深渊装甲服 -->
 
   <RedMoyo_AbyssArmour.label>深渊装甲服</RedMoyo_AbyssArmour.label>
-  <RedMoyo_AbyssArmour.description>Heavy diving gear modified from abysstech diving gear, exceptionally tough.</RedMoyo_AbyssArmour.description>
+  <RedMoyo_AbyssArmour.description>改良自深海潜水服以对抗深渊水压的重型潜水服,当然的也有极强的防御能力.</RedMoyo_AbyssArmour.description>
 
 
   <!-- 深渊装甲盔 -->
 
   <RedMoyo_AbyssHelmet.label>深渊装甲盔</RedMoyo_AbyssHelmet.label>
-  <RedMoyo_AbyssHelmet.description>Helmet paired with the Abyss diving suit.</RedMoyo_AbyssHelmet.description>
+  <RedMoyo_AbyssHelmet.description>改良自深海潜水盔以对抗深渊水压的重型潜水头盔,当然的也有极强的防御能力</RedMoyo_AbyssHelmet.description>
+
 
 </LanguageData>
