@@ -27,12 +27,26 @@
 					<li>RedMoyo_AbyssHelmet</li>
                     </value>
                 </li>
+				
 				<li Class="PatchOperationAdd">
                     <xpath>Defs/RecipeDef[defName="Extract_DeepBlueCorpse"]/ingredients/li/filter/thingDefs</xpath>
 					<value>
 					  <li>Meat_Alien_RedMoyo</li>
 					</value>
                 </li>
+				
+				<li Class="PatchOperationAdd">
+                    <xpath>Defs/RecipeDef[defName="Extract_DeepBlueCorpse"]</xpath>
+					<value>
+						<fixedIngredientFilter>
+							<thingDefs>
+								<li>Meat_Alien_RedMoyo</li>
+								<li>Meat_Alien_Moyo</li>
+							</thingDefs>
+						</fixedIngredientFilter>
+					</value>
+                </li>
+				
             </operations>
     </Operation>
 </Patch>
