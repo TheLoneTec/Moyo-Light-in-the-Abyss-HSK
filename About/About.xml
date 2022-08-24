@@ -5,7 +5,7 @@
 	<supportedVersions>
 		<li>1.3</li>
 	</supportedVersions>
-	<packageId>AOBA.RedMoyo.HSK</packageId>
+	<packageId>AOBA.RedMoyo</packageId>
 	<description>
 	
 From the bottom of the abyss, there lives a subspecies of Moyo,  called Red Moyo because it emits a red shimmer that is different from ordinary Moyo.
@@ -27,13 +27,13 @@ High-temperature adaptability is high, but low-temperature adaptability is very 
 	</description>
 	<modDependencies>
 		<li>
-			<packageId>Nemonian.MY.HSK</packageId>
+			<packageId>Nemonian.MY</packageId>
 			<displayName>Moyo-From the depth HSK</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2182305386</steamWorkshopUrl>
 		</li>		
 	</modDependencies>
 	<loadAfter>
 		<li>goudaquiche.MoharFramework</li>
-		<li>Nemonian.MY.HSK</li>
+		<li>Nemonian.MY</li>
 	</loadAfter>
 </ModMetaData>
