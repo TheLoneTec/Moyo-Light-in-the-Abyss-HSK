@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
 	<Operation Class="PatchOperationFindMod">
-		<mods><li>Moyo-Light in the Abyss HSK</li></mods>
+		<mods><li>Moyo-Light in the Abyss</li></mods>
 		<match Class="PatchOperationSequence">
 		<operations>
 		
@@ -498,7 +498,7 @@
 				<defaultProjectile>Bullet_MabyssalPlasmaPistol</defaultProjectile>
 				<warmupTime>0.6</warmupTime>
 				<burstShotCount>5</burstShotCount>
-				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<range>31</range>
 				<soundCast>Shot_ChargeRifle</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>

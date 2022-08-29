@@ -2,7 +2,7 @@
 <Patch>
 	  <Operation Class="PatchOperationFindMod">
 			
-		<mods><li>Moyo-Light in the Abyss HSK</li></mods>
+		<mods><li>Moyo-Light in the Abyss</li></mods>
 			
 		<match Class="PatchOperationAdd">
 			<xpath>Defs</xpath>
