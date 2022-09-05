@@ -38,6 +38,14 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="RedMoyo_WorkSuit"]</xpath>
+				<value>
+					<recipeMaker>
+						<researchPrerequisite>ComplexClothing</researchPrerequisite>
+					</recipeMaker>
+				</value>
+			</li>
 			
 			<!--========= Fixed Armor Value =========-->
 			
