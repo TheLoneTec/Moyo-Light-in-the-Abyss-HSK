@@ -55,7 +55,9 @@
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<maxGenerationAge>75</maxGenerationAge>
 		<initialWillRange>0~1</initialWillRange>
-		<initialResistanceRange>10~17</initialResistanceRange>		
+		<initialResistanceRange>10~17</initialResistanceRange>	
+		<baseRecruitDifficulty>0.35</baseRecruitDifficulty>
+		<invFoodDef>MealSurvivalPack</invFoodDef>		
 	</PawnKindDef>
 
 	<!-- 平民 -->
