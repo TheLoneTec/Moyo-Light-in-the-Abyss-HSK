@@ -31,12 +31,6 @@ High-temperature adaptability is high, but low-temperature adaptability is very 
 			<displayName>Moyo-From the depth HSK</displayName>
 			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2182305386</steamWorkshopUrl>
 		</li>
-		<li>
-			<packageId>Imranfish.XMLExtensions</packageId>
-			<displayName>XML Extensions</displayName>
-			<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
-			<steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
-		</li>
 	</modDependencies>
 	<loadAfter>
 		<li>goudaquiche.MoharFramework</li>
