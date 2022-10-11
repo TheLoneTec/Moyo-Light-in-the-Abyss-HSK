@@ -423,6 +423,13 @@
 				</value>
 			</li>	
 		
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RedMoyo_Pistol"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>RedMoyoWeaponT1</researchPrerequisite>
+				</value>
+			</li>
+		
 		<!-- ========== Police Pistol =========== -->
 		
 		<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
@@ -475,6 +482,13 @@
 					<li>SolidMetallic</li>
 				</stuffCategories>
 				<costStuffCount>30</costStuffCount>
+			</value>
+		</li>
+		
+		<li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="RedMoyo_PistolPolice"]/recipeMaker/researchPrerequisite</xpath>
+			<value>
+				<researchPrerequisite>RedMoyoWeaponT2</researchPrerequisite>
 			</value>
 		</li>
 		

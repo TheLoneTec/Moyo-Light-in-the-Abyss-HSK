@@ -82,6 +82,13 @@
 				</value>
 			</li>
 			
+			<li Class="PatchOperationReplace">
+				<xpath>Defs/ThingDef[defName="RedMoyo_BobySuit"]/recipeMaker/researchPrerequisite</xpath>
+				<value>
+					<researchPrerequisite>Apparel_C5</researchPrerequisite>
+				</value>
+			</li>
+			
 			<!--Tactical Strap-->
 			
 			<li Class="PatchOperationAdd">
