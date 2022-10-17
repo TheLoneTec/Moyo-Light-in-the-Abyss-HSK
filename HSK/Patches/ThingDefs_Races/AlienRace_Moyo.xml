@@ -106,6 +106,16 @@
 				<value>BaseHumanlikePawn</value>
 			</li>
 			-->
+			
+			<li Class="PatchOperationReplace">
+			 <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_RedMoyo"]/alienRace/generalSettings/alienPartGenerator/alienbodytypes</xpath>
+				  <value>
+					<alienbodytypes>
+						<li>Female</li>
+					</alienbodytypes>
+				  </value>
+			</li>
+			
 		</operations>
 		</match>	
 	  </li>
