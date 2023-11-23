@@ -691,7 +691,7 @@
 				<value>
 					<CarryWeight>110</CarryWeight>
 					<CarryBulk>15</CarryBulk>
-					<ToxicSensitivity>-0.50</ToxicSensitivity>
+					<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
 					<MoveSpeed>-0.75</MoveSpeed>
 				</value>
 			</li>
@@ -827,7 +827,7 @@
 				<xpath>Defs/ThingDef[defName="RedMoyo_AbyssHelmet"]/equippedStatOffsets</xpath>
 				<value>
 						<SmokeSensitivity>-1</SmokeSensitivity>
-						<ToxicSensitivity>-0.50</ToxicSensitivity>
+						<ToxicEnvironmentResistance>0.5</ToxicEnvironmentResistance>
 				</value>
 			</li>
 			

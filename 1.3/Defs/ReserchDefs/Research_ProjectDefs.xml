@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ResearchProjectTagDef>
+		<defName>RedMoyoStart</defName>
+	</ResearchProjectTagDef>
+
+	<ResearchProjectDef>
+		<defName>RedMoyoProduction</defName>
+		<label>polymerization</label>
+		<description>create a high-pressure environment to synthesize materials that cannot be produced at surface</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>2500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>DeepBlue_Research</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>0.75</researchViewY>
+	</ResearchProjectDef>
+	
+	<!--
+	<ResearchProjectDef>
+		<defName>RedMoyoForge</defName>
+		<label>fusion forge</label>
+		<description>todo</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>2500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>GurdianAdvisorResearch</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>5.50</researchViewX>
+		<researchViewY>1.5</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef>
+		<defName>RedMoyoBioComputer</defName>
+		<label>bio computer</label>
+		<description>todo</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>2500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>3.75</researchViewY>
+	</ResearchProjectDef>
+	-->
+	
+	<ResearchProjectDef>
+		<defName>RedMoyoWeaponT1</defName>
+		<label>civil equipment</label>
+		<description>todo</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>250</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>MoyoProduction</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>2.25</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>RedMoyoWeaponT2</defName>
+		<label>police equipment</label>
+		<description>todo</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>750</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>RedMoyoWeaponT1</li>
+			<li>MoyoChargedBolt</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>2.25</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>RedMoyoWeaponT3</defName>
+		<label>military equipment</label>
+		<description>todo</description>
+		<tab>Moyo_technology</tab>
+		<baseCost>3000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>RedMoyoWeaponT2</li>
+			<li>DeepSeaProtection</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<researchViewX>4.50</researchViewX>
+		<researchViewY>2.25</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- player -->
+
+  <RedMoyo_PlayerFaction.label>擱淺難民</RedMoyo_PlayerFaction.label>
+  <RedMoyo_PlayerFaction.description>一群深淵茉約難民的聚集地.</RedMoyo_PlayerFaction.description>
+  <RedMoyo_PlayerFaction.pawnsPlural>難民</RedMoyo_PlayerFaction.pawnsPlural>
+
+
+  <!-- RedMoyo -->
+
+  <RedMoyo_Faction.label>深淵母艦</RedMoyo_Faction.label>
+  <RedMoyo_Faction.description>深淵茉約的聚集地.</RedMoyo_Faction.description>
+  <RedMoyo_Faction.pawnsPlural>深淵茉約</RedMoyo_Faction.pawnsPlural>
+  <RedMoyo_Faction.leaderTitle>大領航員</RedMoyo_Faction.leaderTitle>
+
+
+</LanguageData>

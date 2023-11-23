@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 不詳的深紅色血袋，裝滿了被玷汙者們的血。 -->
+
+  <RedMoyo_BloodBag.label>Red Moyo bloodbag</RedMoyo_BloodBag.label>
+  <RedMoyo_BloodBag.description>An ominous crimson blood bag, filled with the blood of the defiled.</RedMoyo_BloodBag.description>
+
+  <CrimsonSerum.label>crimson serum</CrimsonSerum.label>
+  <CrimsonSerum.description>polluted deepblue extracted from red moyo blood. contained a form of genetic virus called Crimson. It's the substance produced by the Leviathan virus contamination Moyo from the genetic level.\n\nWhen injected, Crimson modifies the subject's body, increasing their metabolism, but unlike regular deepblue it'll make subject's more.....aggressive and will lead to psychically deaf. There is no known way to reverse this process.</CrimsonSerum.description>
+  <CrimsonSerum.ingestible.ingestCommandString>Inject {0}</CrimsonSerum.ingestible.ingestCommandString>
+  <CrimsonSerum.ingestible.ingestReportString>Injecting {0}.</CrimsonSerum.ingestible.ingestReportString>
+
+
+</LanguageData>

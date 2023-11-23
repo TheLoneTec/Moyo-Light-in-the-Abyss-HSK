@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 不詳的深紅色血袋,裝滿了被玷汙者們的血. -->
+
+  <Crimson.label>赤紅原液</Crimson.label>
+  <Crimson.description>赤紅原液與深藍血清依樣具有強化人體的功效,但作為注射後的副作用使用者將失去與靈能共鳴的能力,這是無法逆轉的.</Crimson.description>
+
+  <CrimsonTolerance.label>赤紅原液耐受</CrimsonTolerance.label>
+  <CrimsonTolerance.description>隨著時間的推移,受液體中深藍血清與利維坦病毒所影響的細胞會獲得對該物質的耐受性.需要更多的赤紅原液來適應身體的需要.</CrimsonTolerance.description>
+
+  <CrimsonAddiction.label>利維坦病毒</CrimsonAddiction.label>
+  <CrimsonAddiction.description>一旦接受赤紅原液的注射就會感染其中的利維坦病毒,需要定期的攝入赤紅原液來維持體內的代謝平衡. 如果沒有足夠的赤紅原液供給,感染者會陷入狂暴狀態.\n\n因為赤紅原液的強化效果與對身體的副作用,人類社會有著大量的不法之徒擄掠與誘騙那些不擅於交際的紅茉約,將她們囚禁在暗無天日的茉約牧場以各種方式收集她們身上的每一處體液.</CrimsonAddiction.description>
+  <CrimsonAddiction.comps.0.discoverLetterLabel>利維坦病毒感染</CrimsonAddiction.comps.0.discoverLetterLabel>
+  <CrimsonAddiction.comps.0.discoverLetterText>由於赤紅原液的注射{0}感染了其中存在的微量利維坦病毒.\n\n[PAWN_pronoun] 現在需要定期的攝入赤紅原液來避免體內的利維坦病毒自發增殖, 可以在需求列表中看見 [PAWN_pronoun] 的用量. [PAWN_pronoun]會自行攝入藥物來維持 [PAWN_pronoun]的需求. 如果[PAWN_pronoun]無法獲取足量的赤紅原液, [PAWN_pronoun]受到體內活性化病毒的刺激可能會陷入狂暴之中.</CrimsonAddiction.comps.0.discoverLetterText>
+  <CrimsonAddiction.stages.0.label>躁動</CrimsonAddiction.stages.0.label>
+  <CrimsonAddiction.stages.1.label>狂暴</CrimsonAddiction.stages.1.label>
+
+  <Crimson_Filter.label>Crimson_Filter</Crimson_Filter.label>
+  <Crimson_Filter.description>This pawn is a red Moyo, and will not be affected by crimson. You should not be reading this.</Crimson_Filter.description>
+
+
+</LanguageData>

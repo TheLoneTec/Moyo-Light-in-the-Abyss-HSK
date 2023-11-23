@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+<!-- 紅茉約血袋 -->
+
+<!-- 深淵感染 abyssal infection -->
+
+<!-- CrimsonSerum	赤紅深液 -->
+<!-- 不詳的深紅色血袋，裝滿了被玷汙者們的血。 -->
+
+<ThingDef ParentName="ResourceBase">
+		<defName>RedMoyo_BloodBag</defName>
+		<label>Red Moyo bloodbag</label>
+		<description>An ominous crimson blood bag, filled with the blood of the defiled.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CrimsonSerum</ThingDef>
+			<RecipeDef>Extract_DeepBlueCorpse</RecipeDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>RedMoyo_Items/BloodBag</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<stackLimit>150</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>50</MaxHitPoints>
+			<MarketValue>20</MarketValue>
+			<Mass>0.2</Mass>
+			<Flammability>0.7</Flammability>
+			<DeteriorationRate>1.0</DeteriorationRate>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>4</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
+	</ThingDef>
+	
+	<ThingDef ParentName="DrugPillBase">
+		<defName>CrimsonSerum</defName>
+		<label>crimson serum</label>
+		<description>polluted deepblue extracted from red moyo blood. contained a form of genetic virus called Crimson. It's the substance produced by the Leviathan virus contamination Moyo from the genetic level.\n\nWhen injected, Crimson modifies the subject's body, increasing their metabolism, but unlike regular deepblue it'll make subject's more.....aggressive and will lead to psychically deaf. There is no known way to reverse this process.</description>
+		<descriptionHyperlinks>
+			<HediffDef>Crimson</HediffDef>
+		</descriptionHyperlinks>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>RedMoyo_Items/Crimson</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>32</MarketValue>
+			<Mass>0.01</Mass>
+		</statBases>
+		<ingestible>
+			<foodType>Processed, Fluid</foodType>
+			<baseIngestTicks>30</baseIngestTicks>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Inject {0}</ingestCommandString>
+			<ingestReportString>Injecting {0}.</ingestReportString>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<chairSearchRadius>0</chairSearchRadius>
+			<drugCategory>Medical</drugCategory>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>Crimson_Filter</hediffDef>
+					<severity>1.00</severity>
+					<doToGeneratedPawnIfAddicted>true</doToGeneratedPawnIfAddicted>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>CrimsonTolerance</hediffDef>
+					<severity>0.17</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Crimson</chemical>
+				<addictiveness>0.0001</addictiveness>
+				<needLevelOffset>1.00</needLevelOffset>
+				<listOrder>1013</listOrder>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardHighFreq</li>
+		</thingSetMakerTags>
+		<costList>
+			<RedMoyo_BloodBag>1</RedMoyo_BloodBag>
+		</costList>
+		<recipeMaker>
+			<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+			<workSkill>Intellectual</workSkill>
+			<effectWorking>Cook</effectWorking>
+			<soundWorking>Recipe_CookMeal</soundWorking>
+			<workAmount>3500</workAmount>
+			<productCount>2</productCount>
+			<targetCountAdjustment>2</targetCountAdjustment>
+			<bulkRecipeCount>4</bulkRecipeCount>
+			<recipeUsers>
+				<li>RedMoyo_PolymerizationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>DeepBlue_Research</researchPrerequisite>
+			<skillRequirements>
+				<Intellectual>7</Intellectual>
+			</skillRequirements>
+		</recipeMaker>
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>Crimson</defName>
+		<label>Crimson</label>
+		<description>Crimson increases pawn's body capabilities like deepblue. as a side-effect the injector will be psychically deaf, This effect cannot be reversed.</description>
+		<descriptionHyperlinks>
+			<ThingDef>CrimsonSerum</ThingDef>
+		</descriptionHyperlinks>
+		<defaultLabelColor>(0.8,0.55,0.55)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<restFallFactor>0.8</restFallFactor>
+				<painFactor>0.8</painFactor>        
+				<statOffsets>
+					<PsychicSensitivity>-0.75</PsychicSensitivity>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<offset>0.15</offset>
+					</li>
+					<li>
+						<capacity>Metabolism</capacity>
+						<offset>0.2</offset>
+					</li>
+					<li>
+					  <capacity>Talking</capacity>
+					  <offset>-0.2</offset>
+					</li>
+					<li>
+					  <capacity>Consciousness</capacity>
+					  <offset>0.1</offset>
+					</li>
+					<li>
+					  <capacity>Moving</capacity>
+					  <offset>0.25</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	<ThoughtDeF>
+		<defName>CrimsonThought</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Crimson</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Crimson</label>
+				<description>i can feel the restlessness that comes from the instinct of my body.</description>
+				<baseMoodEffect>-9</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDeF>
+	
+	<ChemicalDef>
+		<defName>Crimson</defName>
+		<label>Crimson</label>
+		<addictionHediff>CrimsonAddiction</addictionHediff>
+		<toleranceHediff>CrimsonTolerance</toleranceHediff>
+		<canBinge>false</canBinge>
+		<generateAddictionGenes>false</generateAddictionGenes>
+	</ChemicalDef>
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>Chemical_Crimson</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>Crimson</label>
+		<description>Constant supply of crimson is needed due to crimson injection. Beacuse there are no known ways to reverse the modification caused by crimson, This effect cannot be reversed.</description>
+		<listPriority>60</listPriority>
+		<fallPerDay>0.15</fallPerDay>
+	</NeedDef>
+	
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>CrimsonTolerance</defName>
+		<label>Crimson tolerance</label>
+		<descriptionHyperlinks>
+			<ThingDef>CrimsonSerum</ThingDef>
+		</descriptionHyperlinks>
+		<description>Cells modified with deepblue and leviathan virus gain tolerance to the substance as time goes on. More crimson will be needed to suit the body's needs.</description>
+		<defaultLabelColor>(0.8,0.55,0.55)</defaultLabelColor>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.025</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>Crimson</chemical>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef ParentName="AddictionBase">
+		<defName>CrimsonAddiction</defName>
+		<label>leviathan virus</label>
+		<descriptionHyperlinks>
+			<ThingDef>CrimsonSerum</ThingDef>
+		</descriptionHyperlinks>
+		<description>Once modified by Crimson, the body will infect leviathan virus which requires Crimson to fuel their metabolism. They will go into berserk if not enough Crimson is supplied.\n\nBecause of its strengthening and the side-effect on the body, there will always be a large number of lawbreakers in human society who abduct and plunder red moyo, imprison them in moyo ranch to collect their blood in various means.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<defaultLabelColor>(0.8,0.55,0.55)</defaultLabelColor>
+		<causesNeed>Chemical_Crimson</causesNeed>
+		<everCurableByItem>false</everCurableByItem>
+		<comps>
+			<li Class="HediffCompProperties_Discoverable">
+				<sendLetterWhenDiscovered>true</sendLetterWhenDiscovered>
+				<discoverLetterLabel>Crimson dependent</discoverLetterLabel>
+				<discoverLetterText>{0} has developed a dependency to Crimson.\n\n[PAWN_pronoun] now has a need for Crimson, visible on [PAWN_pronoun] Needs tab. [PAWN_pronoun] will automatically consume the drug to fulfil [PAWN_pronoun] need. If [PAWN_pronoun] cannot get any Crimson, [PAWN_pronoun] will go unleash their restless.</discoverLetterText>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>restlessness</label>			
+				<minSeverity>0.45</minSeverity>
+			</li>
+			<li>
+				<label>unleashed anger</label>	
+				<mentalStateGivers>
+				  <li>
+					<mentalState>Berserk</mentalState>
+					<mtbDays>0.4</mtbDays>
+				  </li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>Crimson_Filter</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Crimson_Filter</label>
+		<description>This pawn is a red Moyo, and will not be affected by crimson. You should not be reading this.</description>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="MoharHediffs.HediffCompProperties_MultipleHediff">
+				<hediffAndBodypart>
+					<li>
+						<hediff>CrimsonTolerance</hediff>
+					</li>
+					<li>
+						<hediff>CrimsonAddiction</hediff>
+					</li>
+					<li>
+						<hediff>Crimson</hediff>
+					</li>
+				</hediffAndBodypart>
+				<bodyDefBlackList>
+					<li>Moyo</li>
+				</bodyDefBlackList>
+				<debug>false</debug>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<RecipeDef>
+		<defName>RedMoyo_DeepBlue</defName>
+		<label>filter contaminated blood</label>
+		<description>filter contaminated blood to avoid leviathan virus infection.</description>
+		<jobString>filtering blood.</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>500</workAmount>		
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>RedMoyo_BloodBag</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>RedMoyo_BloodBag</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+		  <li>RedMoyo_PolymerizationBench</li>
+		</recipeUsers>
+		<products>
+		  <AbyssSerum>1</AbyssSerum>
+		</products>
+		<skillRequirements>
+			<Crafting>2</Crafting>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+		<researchPrerequisite>DBS_Research</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>RedMoyo_BelialV</defName>
+		<label>Synthesis Belial-V</label>
+		<description>Synthesis Belial-Vm a mechanite solution similar to lufciferum.</description>
+		<jobString>Synthesis Belial-V.</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>5000</workAmount>		
+		<workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>CrimsonSerum</li>
+			  </thingDefs>
+			</filter>
+			<count>4</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Moyo_AbyssPearl</li>
+			  </thingDefs>
+			</filter>
+			<count>2</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Moyo_Abyssteel</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>CrimsonSerum</li>			
+			<li>Moyo_AbyssPearl</li>
+			<li>Moyo_Abyssteel</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<recipeUsers>
+		  <li>RedMoyo_PolymerizationBench</li>
+		</recipeUsers>
+		<products>
+		  <Moyo_BelialV>1</Moyo_BelialV>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+			<Intellectual>13</Intellectual>
+		</skillRequirements>
+		<researchPrerequisite>DeepBlue_Manipulation</researchPrerequisite>
+	</RecipeDef>
+</Defs>

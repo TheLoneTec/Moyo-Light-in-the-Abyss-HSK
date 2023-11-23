@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 不詳的深紅色血袋，裝滿了被玷汙者們的血。 -->
+
+  <RedMoyo_DeepBlue.label>filter contaminated blood</RedMoyo_DeepBlue.label>
+  <RedMoyo_DeepBlue.description>filter contaminated blood to avoid leviathan virus infection.</RedMoyo_DeepBlue.description>
+  <RedMoyo_DeepBlue.jobString>filtering blood.</RedMoyo_DeepBlue.jobString>
+
+  <RedMoyo_BelialV.label>Synthesis Belial-V</RedMoyo_BelialV.label>
+  <RedMoyo_BelialV.description>Synthesis Belial-Vm a mechanite solution similar to lufciferum.</RedMoyo_BelialV.description>
+  <RedMoyo_BelialV.jobString>Synthesis Belial-V.</RedMoyo_BelialV.jobString>
+
+
+</LanguageData>

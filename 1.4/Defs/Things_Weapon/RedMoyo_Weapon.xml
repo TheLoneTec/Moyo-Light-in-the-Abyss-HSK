@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- 工業時代 -->
+			<!-- 深海戰術刀 -->
+	<ThingDef ParentName="MoyoBaseMelee">
+		<defName>RedMoyo_Knife</defName>
+		<label>moyo tatical knife</label>
+		<techLevel>Industrial</techLevel>
+		<description>A knife is always handy to have, and under the sea is no exception. The sharp and light blade made from plasteel is a favorite among moyo divers.</description>
+		<graphicData>
+			<texPath>RedMoyo_Weapons/RedMoyo_Knife</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsMelee</li>
+		</thingCategories>		
+		<uiIconScale>1.0</uiIconScale>
+		<equippedAngleOffset>-45</equippedAngleOffset>		
+		<weaponTags>
+			<li>Moyo_Melee</li>
+			<li>RedMoyo_Civil</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+		</tools>
+		<recipeMaker>
+			<researchPrerequisite>RedMoyoWeaponT1</researchPrerequisite>
+			<recipeUsers Inherit="False">
+				<li>RedMoyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>	
+	
+			<!-- 深海動能鉗 -->
+	<ThingDef ParentName="MoyoBaseMelee">
+		<defName>RedMoyo_KineticClamp</defName>
+		<label>moyo kinetic clamp</label>
+		<techLevel>Spacer</techLevel>
+		<description>Kinetic tongs powered by gunpowder, a perfect tool for ship breakers.</description>
+		<graphicData>
+			<texPath>RedMoyo_Weapons/RedMoyo_HydraulicClamp</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<equippedAngleOffset>-45</equippedAngleOffset>		
+		<weaponTags>
+			<li>Moyo_Melee</li>
+			<li>RedMoyo_Civil</li>
+			<li>RedMoyo_Clamp</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>5.7</Mass>
+		</statBases>
+		<costList>
+			<Moyo_Abyssteel>10</Moyo_Abyssteel>
+			<Steel>50</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<tools>
+			<li>
+				<label>body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>50</power>
+				<cooldownTime>6</cooldownTime>
+			</li>
+		</tools>
+		<equippedStatOffsets>
+			<MiningSpeed>0.2</MiningSpeed>
+		</equippedStatOffsets>				
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RedMoyoWeaponT1</li>
+				<li>GasOperation</li>
+			</researchPrerequisites>
+			<recipeUsers Inherit="False">
+				<li>RedMoyo_FabricationBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>		
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+	</ThingDef>
+	
+			<!-- 深海魚叉 -->
+	<ThingDef ParentName="MoyoBaseMelee">
+		<defName>RedMoyo_AlloyHarpoon</defName>
+		<label>moyo harpoon</label>
+		<description>abyss steel harpoon, capable of piercing small abyssal fish.</description>
+		<graphicData>
+			<texPath>RedMoyo_Weapons/RedMoyo_AlloyHarpoon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RedMoyoWeaponT1</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>RedMoyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsMelee</li>
+		</thingCategories>		
+		<weaponTags>
+			<li>RedMoyo_Civil</li>
+			<li>RedMoyo_Harpoon</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>4</Mass>
+		</statBases>
+		<costList>
+			<Moyo_Abyssteel>30</Moyo_Abyssteel>
+		</costList>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2.5</cooldownTime>
+			</li>		
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>3.5</cooldownTime>
+				<armorPenetration>0.93</armorPenetration>
+				<extraMeleeDamages>
+					<li>
+						<def>Cut</def>
+						<amount>7</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="MoyoBaseMelee">
+		<defName>RedMoyo_PlasmaHarpoon</defName>
+		<label>moyo plasma harpoon</label>
+		<description>Harpoon with heated abyss steel blade, capable of piercing the scales of most abyss creatures.</description>
+		<graphicData>
+			<texPath>RedMoyo_Weapons/RedMoyo_PlasmaHalberd</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<uiIconScale>1.5</uiIconScale>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RedMoyoWeaponT3</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>RedMoyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>60</Moyo_Abyssteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsMelee</li>
+		</thingCategories>		
+		<weaponTags>
+			<li>RedMoyo_AbyssDiverMelee</li>
+			<li>RedMoyo_Military</li>
+			<li>RedMoyo_Harpoon</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>9</Mass>
+		</statBases>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+					<li>Blunt</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>2.5</cooldownTime>
+			</li>		
+			<li>
+				<label>blade</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>3.5</cooldownTime>
+				<armorPenetration>0.93</armorPenetration>
+				<extraMeleeDamages>
+					<li>
+						<def>Burn</def>
+						<amount>10</amount>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="MoyoBaseMelee">
+		<defName>MeleeWeapon_PlasmaTachi</defName>
+		<label>moyo plasma tachi</label>
+		<techLevel>Spacer</techLevel>
+		<description>An oversized katana with heated abyss steel blade,In the past such weapons were seen as a symbol of Abyss moyo's autonomous industrial capabilities.and was used by abyss forces on a large scale</description>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<relicChance>5</relicChance>
+		<weaponClasses>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<graphicData>
+			<texPath>RedMoyo_Weapons/RedMoyo_PlasmaTachi</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+			<thingCategories Inherit="False">
+			<li>Moyo_WeaponsMelee</li>
+		</thingCategories>	
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>RedMoyoWeaponT3</li>
+			</researchPrerequisites>
+			<skillRequirements>
+				<Crafting>12</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>RedMoyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>75</Moyo_Abyssteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<weaponTags>
+			<li>RedMoyo_AbyssDiverMelee</li>
+			<li>RedMoyo_Military</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>60000</WorkToMake>
+			<Mass>9</Mass>
+		</statBases>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>2.8</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>12</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>2.8</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Flame</def>
+						<amount>12</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>
+			</li>
+		</tools>
+	</ThingDef>
+  
+			<!-- 子彈 -->		
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_RedMoyoSmall</defName>
+		<label>light plasma bolt</label>
+		<graphicData>
+			<texPath>RedMoyo_Weapons/RedMoyoBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_RedMoyoMedium</defName>
+		<label>plasma bolt</label>
+		<graphicData>
+			<texPath>RedMoyo_Weapons/RedMoyoBolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+			<stoppingPower>1.2</stoppingPower>
+			<speed>95</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>Bullet_RedMoyoLarge</defName>
+		<label>plasma bolt</label>
+		<graphicData>
+			<texPath>RedMoyo_Weapons/RedMoyoBoltLarge</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>120</speed>
+		</projectile>
+	</ThingDef>
+
+			<!-- Base -->	
+	<ThingDef Name="RedMoyoBaseGunT1" Abstract="true" ParentName="MoyoBaseGun">
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<recipeUsers Inherit="True">
+				<li>RedMoyo_FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>RedMoyoWeaponT1</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsRanged</li>
+		</thingCategories>
+		<weaponTags Inherit="False">
+			<li>RedMoyo_Civil</li>
+		</weaponTags>		
+	</ThingDef>
+	
+	<ThingDef Name="RedMoyoBaseGunT2" Abstract="true" ParentName="MoyoBaseGun">
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<recipeUsers Inherit="True">
+				<li>RedMoyo_FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>RedMoyoWeaponT2</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsRanged</li>
+		</thingCategories>
+		<weaponTags Inherit="False">
+			<li>RedMoyo_Police</li>
+		</weaponTags>		
+	</ThingDef>
+	
+	<ThingDef Name="RedMoyoBaseGunT3" Abstract="true" ParentName="MoyoBaseGun">
+		<techLevel>Spacer</techLevel>
+		<recipeMaker>
+			<recipeUsers Inherit="True">
+				<li>RedMoyo_FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>RedMoyoWeaponT3</researchPrerequisite>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+		</recipeMaker>
+		<thingCategories Inherit="False">
+			<li>Moyo_WeaponsRanged</li>
+		</thingCategories>
+		<weaponTags Inherit="False">
+			<li>RedMoyo_Military</li>
+		</weaponTags>		
+	</ThingDef>
+	
+			<!-- 深海防衛手槍 -->	
+	<ThingDef ParentName="RedMoyoBaseGunT1">
+		<defName>RedMoyo_Pistol</defName>
+		<label>moyo defense pistol</label>
+		<description>defensive firearms designed and produced by red moyo</description>
+		<graphicData>
+			<texPath>RedMoyo_Weapons/RedMoyo_CivilPT</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<soundInteract>Interact_Autopistol</soundInteract>	
+		<recipeMaker>
+			<researchPrerequisite>GasOperation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<weaponTags>
+			<li>MoyoBasicGun</li>
+			<li>RedMoyo_Civil</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>0.7</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Moyo_Abyssteel>10</Moyo_Abyssteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RedMoyoSmall</defaultProjectile>
+				<warmupTime>0.2</warmupTime>
+				<range>20.5</range>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+			<!-- 深海防衛步槍 -->
+	<ThingDef ParentName="RedMoyoBaseGunT1">
+		<defName>RedMoyo_CivilAR</defName>
+		<label>moyo civil rifle</label>
+		<description>Extended pistol, or rifle, for hunting and self-defense</description>
+		<graphicData>
+			<texPath>RedMoyo_Weapons/RedMoyo_CivilAR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>	
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>49500</WorkToMake>
+			<Mass>7.25</Mass>
+			<AccuracyTouch>0.6</AccuracyTouch>
+			<AccuracyShort>0.61</AccuracyShort>
+			<AccuracyMedium>0.48</AccuracyMedium>
+			<AccuracyLong>0.36</AccuracyLong>
+			<RangedWeapon_Cooldown>1.30</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>RedMoyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>25</Moyo_Abyssteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>RedMoyo_Police</li>
+			<li>RedMoyo_Civil</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RedMoyoMedium</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>24.5</range>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<burstShotCount>4</burstShotCount>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+			<!-- 深海警用手槍 -->
+	<ThingDef ParentName="RedMoyoBaseGunT2">
+		<defName>RedMoyo_PistolPolice</defName>
+		<label>moyo police pistol</label>
+		<description>a high-power pistol for red moyo armed forces and law enforcement agencies</description>
+		<graphicData>
+			<texPath>RedMoyo_Weapons/RedMoyo_PolicePT</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<uiIconScale>1.5</uiIconScale>
+		<soundInteract>Interact_Autopistol</soundInteract>	
+		<recipeMaker>
+			<researchPrerequisite>GasOperation</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<weaponTags>
+			<li>RedMoyo_Police</li>
+		</weaponTags>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>1.2</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.75</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
+			<RangedWeapon_Cooldown>0.95</RangedWeapon_Cooldown>
+		</statBases>
+		<costList>
+			<Moyo_Abyssteel>35</Moyo_Abyssteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RedMoyoMedium</defaultProjectile>
+				<warmupTime>0.2</warmupTime>
+				<range>25.5</range>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>	
+			<!-- 深海警用衝鋒槍 -->			
+	<ThingDef ParentName="RedMoyoBaseGunT2"> 
+		<defName>RedMoyo_SMG</defName>
+		<label>moyo police SMG</label>
+		<description>Small submachine gun for in-cabin combat</description>
+		<graphicData>
+			<texPath>RedMoyo_Weapons/RedMoyo_PoliceSMG</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>	
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>41500</WorkToMake>
+			<Mass>3</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.71</AccuracyShort>
+			<AccuracyMedium>0.46</AccuracyMedium>
+			<AccuracyLong>0.11</AccuracyLong>
+			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>45</Moyo_Abyssteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>RedMoyo_Police</li>
+			<li>Moyo_SpacerLightGun</li>
+			<li>Gun</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RedMoyoSmall</defaultProjectile>
+				<warmupTime>1.55</warmupTime>
+				<range>21.5</range>
+				<ticksBetweenBurstShots>9</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+			<!-- 深海軍用步槍-->	
+	<ThingDef ParentName="RedMoyoBaseGunT3">
+    <defName>RedMoyo_MilitaryAR</defName>
+    <label>moyo assault rifle</label>
+    <description>A general-purpose assault rifle for red moyo armed forces, It has good range, decent power, and good accuracy.</description>
+    <graphicData>
+      <texPath>RedMoyo_Weapons/RedMoyo_MilitaryAR</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Interact_Rifle</soundInteract>
+    <recipeMaker>
+		<researchPrerequisite>RedMoyoWeaponT3</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+    </recipeMaker>
+    <thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>
+    <statBases>
+      <WorkToMake>40000</WorkToMake>
+      <Mass>3.5</Mass>
+      <AccuracyTouch>0.55</AccuracyTouch>
+      <AccuracyShort>0.65</AccuracyShort>
+      <AccuracyMedium>0.70</AccuracyMedium>
+      <AccuracyLong>0.55</AccuracyLong>
+      <RangedWeapon_Cooldown>1.55</RangedWeapon_Cooldown>
+    </statBases>
+    <costList>
+		<Moyo_Abyssteel>60</Moyo_Abyssteel>
+		<ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_RedMoyoMedium</defaultProjectile>
+        <warmupTime>1.0</warmupTime>
+        <range>30.9</range>
+        <burstShotCount>3</burstShotCount>
+        <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+        <soundCast>Shot_AssaultRifle</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+      </li>
+    </verbs>
+    <weaponTags>
+		<li>RedMoyo_Military</li>
+		<li>Moyo_SpacerLightGun</li>  
+		<li>AssaultRifle</li>
+    </weaponTags>
+    <tools>
+      <li>
+        <label>stock</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>plasma bayonet</label>
+        <capacities>
+          <li>Blunt</li>
+          <li>Poke</li>
+        </capacities>
+        <power>15</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+	<equippedAngleOffset>45</equippedAngleOffset>
+  </ThingDef>			
+			<!-- 深海精確步槍-->	
+	<ThingDef ParentName="RedMoyoBaseGunT3">
+		<defName>RedMoyo_MilitarySR</defName>
+		<label>moyo military precision rifle</label>
+		<description>A sniper rifle that can barely penetrate the shell of abyssal creatures at long distances</description>
+		<graphicData>
+			<texPath>RedMoyo_Weapons/RedMoyo_MilitarySR</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>49500</WorkToMake>
+			<Mass>6.2</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.91</AccuracyMedium>
+			<AccuracyLong>0.99</AccuracyLong>
+			<RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>RedMoyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>60</Moyo_Abyssteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+		<weaponTags>
+			<li>RedMoyo_Military</li>
+			<li>RedMoyo_Sinper</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RedMoyoMedium</defaultProjectile>
+				<warmupTime>1.4</warmupTime>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+				<range>44.6</range>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>	
+			<!-- 深海重型步槍-->	
+	<ThingDef ParentName="RedMoyoBaseGunT3">
+		<defName>RedMoyo_MilitaryHeavyRifle</defName>
+		<label>moyo charge accelerator</label>
+		<description>A red moyo versioned large accelerator made to fight off the leviathans that threaten their mothership..</description>
+		<graphicData>
+			<texPath>RedMoyo_Weapons/RedMoyo_MilitaryHeavyRifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1</drawSize>	
+		</graphicData>
+		<soundInteract>Moyo_WeaponInteract</soundInteract>	
+		<statBases>
+			<WorkToMake>75000</WorkToMake>
+			<Mass>12.5</Mass>
+			<AccuracyTouch>0.55</AccuracyTouch>
+			<AccuracyShort>0.62</AccuracyShort>
+			<AccuracyMedium>0.81</AccuracyMedium>
+			<AccuracyLong>0.68</AccuracyLong>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>RedMoyoWeaponT3</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>15</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>RedMoyo_FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Moyo_Abyssteel>105</Moyo_Abyssteel>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		<weaponTags>
+			<li>RedMoyo_Military</li>
+			<li>RedMoyo_MilitaryHeavy</li>
+		</weaponTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>Bullet_RedMoyoLarge</defaultProjectile>
+				<warmupTime>3</warmupTime>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+				<range>47.5</range>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>body</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.5</MoveSpeed>
+		</equippedStatOffsets>	
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>		
+	</ThingDef>	
+
+</Defs>

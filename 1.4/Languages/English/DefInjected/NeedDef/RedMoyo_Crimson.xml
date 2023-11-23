@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- 不詳的深紅色血袋，裝滿了被玷汙者們的血。 -->
+
+  <Chemical_Crimson.label>Crimson</Chemical_Crimson.label>
+  <Chemical_Crimson.description>Constant supply of crimson is needed due to crimson injection. Beacuse there are no known ways to reverse the modification caused by crimson, This effect cannot be reversed.</Chemical_Crimson.description>
+
+
+</LanguageData>

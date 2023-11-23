@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<RecipeDef>
+		<defName>Make_RedMoyo_Abyssteel</defName>
+		<label>make abyssteel</label>
+		<description>Make abyssteel, a commonly used alloy in the lighthouse. It is necessary for producing their items.</description>
+		<jobString>Making abyssteel.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>10000</workAmount>
+		<recipeUsers>
+			<li>Moyo_FabricationBench</li>
+		</recipeUsers>			
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AbyssSerum</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>			
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Plasteel</li>
+				<li>Uranium</li>
+				<li>Steel</li>
+				<li>AbyssSerum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Moyo_Abyssteel>75</Moyo_Abyssteel>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>RedMoyoProduction</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Make_RedMoyo_AbyssPearl</defName>
+		<label>make abyssal pearl</label>
+		<description>Make abyssal pearl. A peculiar pearl of pure deepblue to be used in exotic products.</description>
+		<jobString>Making abyssal pearl.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>2500</workAmount>
+		<recipeUsers>
+			<li>Moyo_FabricationBench</li>
+		</recipeUsers>			
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AbyssSerum</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>AbyssSerum</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<products>
+			<Moyo_AbyssPearl>1</Moyo_AbyssPearl>
+		</products>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>RedMoyoProduction</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>Make_RedMoyo_Depthweave</defName>
+		<label>make depthweave</label>
+		<description>Make depthweave. A versitile fabric commonly used in the Lighthouse.</description>
+		<jobString>Making depthweave.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<workAmount>3500</workAmount>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>TableMachining</li>
+		</recipeUsers>			
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>AbyssSerum</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Cloth</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>			
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Cloth</li>
+				<li>Steel</li>
+				<li>AbyssSerum</li>
+			</thingDefs>	
+		</fixedIngredientFilter>
+		<products>
+			<Moyo_Depthweave>75</Moyo_Depthweave>
+		</products>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+		<workSkill>Crafting</workSkill>
+		<researchPrerequisite>RedMoyoProduction</researchPrerequisite>
+	</RecipeDef>	
+	
+</Defs>

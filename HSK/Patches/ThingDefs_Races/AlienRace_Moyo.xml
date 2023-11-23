@@ -108,11 +108,11 @@
 			-->
 			
 			<li Class="PatchOperationReplace">
-			 <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_RedMoyo"]/alienRace/generalSettings/alienPartGenerator/alienbodytypes</xpath>
+			 <xpath>/Defs/AlienRace.ThingDef_AlienRace[defName="Alien_RedMoyo"]/alienRace/generalSettings/alienPartGenerator/bodyTypes</xpath>
 				  <value>
-					<alienbodytypes>
+					<bodyTypes>
 						<li>Female</li>
-					</alienbodytypes>
+					</bodyTypes>
 				  </value>
 			</li>
 			

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <Alien_RedMoyo.label>Red Moyo</Alien_RedMoyo.label>
+  <Alien_RedMoyo.description>A subspecies of the Moyo race, usually babies born after Moyo fertilized by creature infected with the Leviathan virus. And because the symbiotic virus affects, most of them have strange personalities, but not intrinsically bad.</Alien_RedMoyo.description>
+  <Alien_RedMoyo.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>skin</Alien_RedMoyo.alienRace.generalSettings.alienPartGenerator.colorChannels.0.name>
+  <Alien_RedMoyo.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>hair</Alien_RedMoyo.alienRace.generalSettings.alienPartGenerator.colorChannels.1.name>
+  <Alien_RedMoyo.tools.0.label>left fist</Alien_RedMoyo.tools.0.label>
+  <Alien_RedMoyo.tools.1.label>right fist</Alien_RedMoyo.tools.1.label>
+  <Alien_RedMoyo.tools.2.label>teeth</Alien_RedMoyo.tools.2.label>
+  <Alien_RedMoyo.tools.3.label>head</Alien_RedMoyo.tools.3.label>
+
+
+</LanguageData>

@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+   <PawnKindDef Abstract="True" Name="RedMoyoPlayerBasePawnKind">
+        <race>Alien_RedMoyo</race>
+        <combatPower>50</combatPower>
+        <isFighter>false</isFighter>
+        <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+        <forceNormalGearQuality>true</forceNormalGearQuality>
+        <defaultFactionType>RedMoyo_PlayerFaction</defaultFactionType>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <initialWillRange>0~1</initialWillRange>
+        <initialResistanceRange>10~17</initialResistanceRange>
+        <skinColorOverride>(1, 1, 1, 1)</skinColorOverride>
+    </PawnKindDef>
+	<!--  -->
+	<PawnKindDef ParentName="RedMoyoPlayerBasePawnKind">
+		<defName>RedMoyo_ColonistPawn</defName>
+		<label>red moyo colonist</label>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<apparelTags>
+			<li>Moyo_Starting</li>
+		</apparelTags>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>RedMoyo_Abyss</li>
+					<li>Moyo_MiddleCivil</li>
+					<li>Moyo_BotCivil</li>
+					<li>Moyo_Engineer</li>
+					<li>Moyo_Resercher</li>
+					<li>Moyo_FullCrime</li>
+					<li>Moyo_SoldierKind</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>600~800</apparelMoney>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<techHediffsChance>0.05</techHediffsChance>
+		<techHediffsMoney>50~800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<apparelRequired>
+		</apparelRequired>
+	</PawnKindDef>
+	
+		<!-- 平民 -->
+	<PawnKindDef Name="RedMoyoBasePawnKind" Abstract="True">
+		<race>Alien_RedMoyo</race>
+		<defaultFactionType>RedMoyo_Faction</defaultFactionType>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<invNutrition>2</invNutrition>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<maxGenerationAge>75</maxGenerationAge>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>		
+	</PawnKindDef>
+
+	<!-- 平民 -->
+	<PawnKindDef ParentName="RedMoyoBasePawnKind">
+		<defName>RedMoyo_Slave</defName>
+		<label>moyo slave</label>
+		<combatPower>15</combatPower>
+		<isFighter>false</isFighter>
+		<itemQuality>Poor</itemQuality>
+		<apparelTags>
+			<li>RedMoyo_Slave</li>
+		</apparelTags>
+		<gearHealthRange>0.2~2.0</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_BotCivil</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>200~400</apparelMoney>
+		<weaponMoney>220~350</weaponMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>50~600</techHediffsMoney>
+		<techHediffsTags>
+			<li>simple</li>
+		</techHediffsTags>
+		<weaponTags>
+			<li>Gun</li>
+			<li>RedMoyo_Civil</li>
+		</weaponTags>
+	</PawnKindDef>
+	<!-- 平民 -->
+	<PawnKindDef ParentName="RedMoyoBasePawnKind">
+		<defName>RedMoyo_Civilan</defName>
+		<label>red moyo civilian</label>
+		<combatPower>25</combatPower>
+		<isFighter>false</isFighter>
+		<itemQuality>Normal</itemQuality>
+		<apparelTags>
+			<li>Moyo_Neolithic</li>
+			<li>Moyo_Starting</li>
+			<li>RedMoyo_Civil</li>
+		</apparelTags>
+		<gearHealthRange>0.2~2.0</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_BotCivil</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>200~800</apparelMoney>
+		<weaponTags>
+			<li>RedMoyo_Civil</li>
+		</weaponTags>
+		<weaponMoney>250~600</weaponMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>50~600</techHediffsMoney>
+		<techHediffsTags>
+			<li>simple</li>
+		</techHediffsTags>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="RedMoyoBasePawnKind">
+		<defName>RedMoyo_Engineer</defName>
+		<label>red moyo ship breaker</label>
+		<combatPower>50</combatPower>
+		<isFighter>false</isFighter>
+		<itemQuality>Normal</itemQuality>
+		<apparelTags>
+			<li>Moyo_Industrial</li>
+			<li>Moyo_Engineer</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RedMoyo_WorkSuit</li>
+			<li>Moyo_EGmask</li>
+			<li>Moyo_Bodysuit</li>
+		</apparelRequired>
+		<gearHealthRange>0.2~2.0</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_BotCivil</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>200~800</apparelMoney>
+		<weaponTags>
+			<li>RedMoyo_Clamp</li>
+		</weaponTags>
+		<weaponMoney>500~1600</weaponMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>500~1000</techHediffsMoney>
+		<techHediffsTags>
+			<li>simple</li>
+		</techHediffsTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~13</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="RedMoyoBasePawnKind">
+		<defName>RedMoyo_Hunter</defName>
+		<label>red moyo abyss hunter</label>
+		<combatPower>75</combatPower>
+		<isFighter>true</isFighter>
+		<itemQuality>Normal</itemQuality>
+		<apparelTags>
+			<li>BeltDefensePop</li>
+			<li>RedMoyo_Common</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RedMoyo_TacticalHeadSet</li>
+			<li>RedMoyo_TacticalStrap</li>
+		</apparelRequired>
+		<gearHealthRange>0.2~2.0</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_BotCivil</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<apparelMoney>150~800</apparelMoney>
+		<weaponTags>
+			<li>RedMoyo_Harpoon</li>
+		</weaponTags>
+		<weaponMoney>1400~1600</weaponMoney>
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>1300~1600</techHediffsMoney>
+		<techHediffsTags>
+			<li>simple</li>
+		</techHediffsTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~18</range>
+			</li>
+		</skills>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+	</PawnKindDef>
+
+		<!-- 警察 -->	
+	<PawnKindDef ParentName="RedMoyoBasePawnKind" Name="RedMoyoPolice" Abstract="true">
+		<combatPower>50</combatPower>
+		<forceNormalGearQuality>false</forceNormalGearQuality>
+		<isFighter>true</isFighter>
+		<baseRecruitDifficulty>0.70</baseRecruitDifficulty>
+		<gearHealthRange>2~3</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_SoldierKind</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<biocodeWeaponChance>0.2</biocodeWeaponChance>
+		<techHediffsChance>0.5</techHediffsChance>
+		<techHediffsMoney>600~2000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~13</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~12</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+	<!-- 民兵 -->	
+	<PawnKindDef ParentName="RedMoyoPolice">
+		<defName>RedMoyo_Volunteer</defName>
+		<label>moyo volunteer</label>
+		<apparelRequired>
+			<li>RedMoyo_PanHat</li>
+				<!-- <li>RedMoyo_PoliceUniform</li> -->	
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>RedMoyo_Civil</li>
+			<li>RedMoyo_Police</li>
+		</apparelTags>
+		<apparelMoney>500~1200</apparelMoney>
+		<weaponTags>
+			<li>Gun</li>
+			<li>MoyoBasicGun</li>
+			<li>RedMoyo_Civil</li>
+			<li>RedMoyo_Police</li>
+		</weaponTags>
+		<weaponMoney>250~750</weaponMoney>
+	</PawnKindDef>
+	
+	<!-- 騎警 -->		
+	<PawnKindDef ParentName="RedMoyoPolice">
+		<defName>RedMoyoRanger</defName>
+		<label>moyo ranger</label>
+		<apparelRequired>
+			<li>RedMoyo_PanHat</li>
+			<li>RedMoyo_PoliceUniform</li>
+				<!-- RedMoyo_TacticalGears</li> -->	
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>RedMoyo_Police</li>
+		</apparelTags>
+		<apparelMoney>2500~3000</apparelMoney>
+		<weaponTags>
+			<li>RedMoyo_Police</li>
+		</weaponTags>
+		<weaponMoney>1200~1500</weaponMoney>
+	</PawnKindDef>
+	
+	<!-- 武警 -->
+	<PawnKindDef ParentName="RedMoyoPolice">
+		<defName>RedMoyoTrooper</defName>
+		<combatPower>125</combatPower>
+		<label>moyo surge trooper</label>
+		<apparelRequired>
+			<li>RedMoyo_Helmet</li>
+			<li>RedMoyo_TacticalStrap</li>
+			<li>RedMoyo_BobySuit</li>
+			<li>RedMoyo_TacticalGears</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>RedMoyo_Police</li>
+		</apparelTags>
+		<apparelMoney>2500~3800</apparelMoney>
+		<weaponTags>
+			<li>Gun</li>
+			<li>RedMoyo_Police</li>
+		</weaponTags>
+		<weaponMoney>1200~1500</weaponMoney>
+	</PawnKindDef>	
+	
+	<!-- 督導員 -->
+	<PawnKindDef ParentName="RedMoyoPolice">
+		<defName>RedMoyoSupervisor</defName>
+		<combatPower>150</combatPower>
+		<label>moyo tactical supervisor</label>
+		<apparelRequired>
+			<li>RedMoyo_TacticalHeadSet</li>
+			<li>RedMoyo_BobySuit</li>
+			<li>RedMoyo_TacticalGears</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>RedMoyo_Police</li><!-- 之後要改 -->
+		</apparelTags>
+		<apparelMoney>2500~3800</apparelMoney>
+		<weaponTags>
+			<li>RedMoyo_Police</li>
+		</weaponTags>
+		<weaponMoney>1200~1500</weaponMoney>
+	</PawnKindDef>		
+	
+		<!-- 軍人 -->		
+	<PawnKindDef ParentName="RedMoyoBasePawnKind" Name="RedMoyoSoliderStandard" Abstract="true">
+		<combatPower>350</combatPower>
+		<isFighter>true</isFighter>
+		<baseRecruitDifficulty>0.7</baseRecruitDifficulty>
+		<gearHealthRange>3~3.5</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_SoldierKind</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>2800~4000</apparelMoney>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~13</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~13</range>
+			</li>
+		</skills>
+		<weaponMoney>1200~2000</weaponMoney>
+		<biocodeWeaponChance>0.3</biocodeWeaponChance>
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>600~3800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<invNutrition>0</invNutrition>
+	</PawnKindDef>
+	
+	<!-- 海軍陸戰隊 -->		
+	<PawnKindDef ParentName="RedMoyoSoliderStandard">
+		<defName>RedMoyoMarine</defName>	
+		<label>moyo abyss marine</label>
+		<combatPower>350</combatPower>
+		<isFighter>true</isFighter>
+		<baseRecruitDifficulty>0.7</baseRecruitDifficulty>
+		<apparelTags>
+			<li>RedMoyo_Marine</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>RedMoyo_Helmet</li>
+			<li>RedMoyo_MeleeMask</li>
+			<li>RedMoyo_TacticalStrap</li>
+			<li>RedMoyo_TacticalGears</li>	
+			<li>RedMoyo_BobySuit</li>
+		</apparelRequired>
+		<gearHealthRange>3~3.5</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_SoldierKind</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>2800~4000</apparelMoney>
+		<weaponTags>
+			<li>Gun</li>
+			<li>Moyo_SpacerLightGun</li>
+			<li>RedMoyo_Military</li>
+			<li>SniperRifle</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~13</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~15</range>
+			</li>
+		</skills>
+		<weaponMoney>1200~2000</weaponMoney>
+		<biocodeWeaponChance>0.3</biocodeWeaponChance>
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>600~3800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<invNutrition>0</invNutrition>
+	</PawnKindDef>
+	
+	<!-- 衛光人 -->	
+	<PawnKindDef ParentName="RedMoyoSoliderStandard">
+		<defName>RedMoyoLightkeeper</defName>
+		<label>moyo Light keeper</label>
+		<combatPower>500</combatPower>
+		<isFighter>true</isFighter>
+		<baseRecruitDifficulty>0.9</baseRecruitDifficulty>
+		<apparelTags>
+			<li>RedMoyo_Tatical</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RedMoyo_SniperMask</li>
+			<li>RedMoyo_ExoSkeleton</li>
+		</apparelRequired>
+		<gearHealthRange>2~3.5</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_SoldierKind</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>15~20</range>
+			</li>
+		</skills>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>8000~8000</apparelMoney>
+		<weaponTags>
+			<li>Moyo_SpacerHeavyGun</li>
+			<li>SniperRifle</li>
+			<li>RedMoyo_Sinper</li>
+		</weaponTags>
+		<weaponMoney>1700~6000</weaponMoney>
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<techHediffsChance>0.95</techHediffsChance>
+		<techHediffsMoney>3600~8000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<invNutrition>0</invNutrition>
+	</PawnKindDef>
+	
+	<!-- 潛淵者 -->
+	<PawnKindDef ParentName="RedMoyoSoliderStandard">
+		<defName>RedMoyoAbyssDiver</defName>
+		<label>moyo abyss diver</label>
+		<combatPower>500</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>true</canBeSapper>
+		<baseRecruitDifficulty>0.9</baseRecruitDifficulty>
+		<apparelTags>
+			<li>Moyo_SpacerHeavy</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_ShieldBelt</li>
+			<li>RedMoyo_AbyssArmour</li>
+			<li>RedMoyo_AbyssHelmet</li>
+		</apparelRequired>
+		<gearHealthRange>2~3.5</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_SoldierKind</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>15~20</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~15</range>
+			</li>
+		</skills>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>8000~18000</apparelMoney>
+		<weaponTags>
+			<li>Moyo_SpacerMelee</li>
+			<li>Moyo_GuardianMelee</li>
+			<li>RedMoyo_AbyssDiverMelee</li>
+		</weaponTags>
+		<weaponMoney>1100~6500</weaponMoney>
+		<biocodeWeaponChance>0.3</biocodeWeaponChance>
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>600~3800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<invNutrition>0</invNutrition>
+	</PawnKindDef>
+	
+	<!-- 潛淵者(遠程) -->
+	<PawnKindDef ParentName="RedMoyoSoliderStandard">
+		<defName>RedMoyoAbyssDiverRanged</defName>
+		<label>moyo abyss diver</label>
+		<combatPower>500</combatPower>
+		<isFighter>true</isFighter>
+		<canBeSapper>true</canBeSapper>
+		<baseRecruitDifficulty>0.9</baseRecruitDifficulty>
+		<apparelTags>
+			<li>Moyo_SpacerHeavy</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RedMoyo_AbyssArmour</li>
+			<li>RedMoyo_AbyssHelmet</li>
+		</apparelRequired>
+		<gearHealthRange>2~3.5</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_SoldierKind</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~15</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>15~20</range>
+			</li>
+		</skills>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>8000~12000</apparelMoney>
+		<weaponTags>
+			<li>Moyo_GuardianGun</li>
+			<li>RedMoyo_MilitaryHeavy</li>
+		</weaponTags>
+		<weaponMoney>2000~6500</weaponMoney>
+		<biocodeWeaponChance>0.3</biocodeWeaponChance>
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>600~3800</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+		</techHediffsRequired>
+		<invNutrition>0</invNutrition>
+	</PawnKindDef>
+
+		<!-- 領導 -->	
+	<!-- 領航員 -->
+	<PawnKindDef ParentName="RedMoyoBasePawnKind">
+		<defName>RedMoyo_leader</defName>
+		<label>moyo navigator</label>
+		<combatPower>100</combatPower>
+		<isFighter>true</isFighter>
+		<factionLeader>true</factionLeader>
+		<itemQuality>Excellent</itemQuality>
+		<baseRecruitDifficulty>0.99</baseRecruitDifficulty>
+		<apparelTags>
+			<li>Moyo_Royal</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>RedMoyo_PanHat</li>
+			<li>RedMoyo_OfficerCape</li>
+		</apparelRequired>
+		<gearHealthRange>1.5~3</gearHealthRange>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Moyo_BotCivil</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>3000~8000</apparelMoney>
+		<weaponTags>
+			<li>Moyo_SpacerLightGun</li>
+		</weaponTags>
+		<weaponMoney>1200~1500</weaponMoney>
+		<techHediffsChance>0.3</techHediffsChance>
+		<techHediffsMoney>600~2000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<inventoryOptions>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>Silver</thingDef>
+					<countRange>500~1100</countRange>
+					<choiceChance>100</choiceChance>
+				</li>
+				<li>
+					<thingDef>MoyoMedicine</thingDef>
+					<countRange>2~4</countRange>
+					<choiceChance>100</choiceChance>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+</Defs>

@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <loadFolders>
-  <v1.3>
-    <li>/</li>
-	<li>HSK</li>
-  </v1.3>
+	<v1.4>
+	    <!-- <li IfModNotActive="Ludeon.RimWorld.Biotech">1.4/StandaloneModule</li> -->
+	    <!-- <li IfModActive="Ludeon.RimWorld.Biotech">1.4/BiotechModule</li> -->
+        <li>1.4</li>
+        <li>/</li>
+	    <li>1.4/BiotechModule</li>
+		<li>HSK</li>
+    </v1.4>
 </loadFolders>

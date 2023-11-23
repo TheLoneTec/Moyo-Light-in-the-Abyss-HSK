@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AlienRace.ThingDef_AlienRace ParentName="BasePawn">
+		<defName>Alien_RedMoyo</defName>
+		<label>Red Moyo</label>
+		<description>A subspecies of the Moyo race, usually babies born after Moyo fertilized by creature infected with the Leviathan virus. And because the symbiotic virus affects, most of them have strange personalities, but not intrinsically bad.</description>
+		<descriptionHyperlinks>
+			<ThingDef>RedMoyo_BloodBag</ThingDef>
+		</descriptionHyperlinks>
+		<alienRace>
+			<generalSettings>
+				<maleGenderProbability>0.001</maleGenderProbability>
+				<immuneToAge>true</immuneToAge>
+				<humanRecipeImport>true</humanRecipeImport>
+				<canLayDown>true</canLayDown>
+				<maxDamageForSocialfight>8</maxDamageForSocialfight>
+				<immuneToXenophobia>false</immuneToXenophobia>
+				<disallowedTraits>
+					<li>
+						<defName>Pyromaniac</defName>
+					</li>
+					<li>
+						<defName>CreepyBreathing</defName>
+					</li>
+					<li>
+						<defName>Cannibal</defName>
+					</li>
+					<li>
+						<defName>Jealous</defName>
+					</li>
+					<li>
+						<defName>AnnoyingVoice</defName>
+					</li>
+					<li>
+						<defName>DrugDesire</defName>
+					</li>
+					<li>
+						<defName>PsychicSensitivity</defName>
+					</li>
+				</disallowedTraits>
+				<chemicalSettings>
+					<li>
+						<chemical>DeepBlue</chemical>
+						<reactions>
+							<li Class="IngestionOutcomeDoer_GiveHediff">
+								<hediffDef>Moyo_DeepBlueReaction</hediffDef>
+								<severity>0.23</severity>
+							</li>
+						</reactions>
+					</li>
+					<li>
+						<chemical>BlueBurstC</chemical>
+						<reactions>
+							<li Class="IngestionOutcomeDoer_GiveHediff">
+								<hediffDef>BlueBurstHighPrecursor</hediffDef>
+								<severity>0.01</severity>
+							</li>
+						</reactions>
+						<ingestible>false</ingestible>
+					</li>
+				</chemicalSettings>
+				<!--=파트제네레이터==========================================================================================-->
+				<alienPartGenerator>
+					<atlasScale>4</atlasScale>
+					<borderScale>1</borderScale>
+					<headTypes>
+						<li>MoyoHead</li>
+						<li>MoyoHead1</li>
+						<li>MoyoHead2</li>
+						<li>MoyoHead3</li>
+						<li>MoyoHead4</li>
+						<li>MoyoHead5</li>
+					</headTypes>
+					<bodyTypes>
+						<li>Female</li>
+						<li>Thin</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Baby</li>
+						<li MayRequire="Ludeon.RimWorld.Biotech">Child</li>
+					</bodyTypes>
+					<headOffset>(-0.07, -0.06)</headOffset>
+					<!-- 신체 드로잉 크기 -->
+					<customDrawSize>(1.1, 1.1)</customDrawSize>
+					<customHeadDrawSize>(1.0, 1.0)</customHeadDrawSize>
+					<customPortraitDrawSize>(1.0, 1.0)</customPortraitDrawSize>
+					<bodyAddons>
+						<li>
+							<path>RedMoyo/Tail/MoyoTail</path>
+							<bodyPartLabel>tail</bodyPartLabel>
+							<shaderType>Cutout</shaderType>
+							<inFrontOfBody>false</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<drawnInBed>false</drawnInBed>
+							<defaultOffset>Tail</defaultOffset>
+							<scaleWithPawnDrawsize>true</scaleWithPawnDrawsize>
+							<offsets>
+								<south>
+									<layerOffset>-0.27</layerOffset>
+									<bodyTypes>
+										<Female>(0,0)</Female>
+										<Thin>(0,0)</Thin>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+								</south>
+								<north>
+									<layerOffset>-0.28</layerOffset>
+									<bodyTypes>
+										<Female>(0,0.551)</Female>
+										<Thin>(0,0.551)</Thin>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0.551)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0.548)</Child>
+									</bodyTypes>
+								</north>
+								<east>
+									<layerOffset>-0.28</layerOffset>
+									<bodyTypes>
+										<Female>(-0.34,0.193)</Female>
+										<Thin>(-0.34,0.193)</Thin>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.36,0.193)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.36,0.193)</Child>
+									</bodyTypes>
+								</east>
+							</offsets>
+						</li>
+						<!--더듬이-->
+						<li>
+							<path>RedMoyo/Heads/MoyoAtenna_Left</path>
+							<bodyPartLabel>left antennae</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<ageGraphics MayRequire="Ludeon.RimWorld.Biotech">
+								<HumanlikeBaby>
+									<path>RedMoyo/Heads/Baby/MoyoAtenna_Left</path>
+								</HumanlikeBaby>
+							</ageGraphics>
+							<offsets>
+								<north>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Thin>(0.0, 0.0)</Thin>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+								</north>
+								<south>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Thin>(0.0, 0.0)</Thin>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(-0.02,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(-0.02,0)</Child>
+									</bodyTypes>
+								</south>
+								<east>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Thin>(0.0, 0.0)</Thin>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0.0,0)</Child>
+									</bodyTypes>
+								</east>
+							</offsets>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>MoyoTuque</li>
+							</hiddenUnderApparelTag>
+						</li>
+						<li>
+							<path>RedMoyo/Heads/MoyoAtenna_Right</path>
+							<bodyPartLabel>right antennae</bodyPartLabel>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>skin</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<ageGraphics MayRequire="Ludeon.RimWorld.Biotech">
+								<HumanlikeBaby>
+									<path>RedMoyo/Heads/Baby/MoyoAtenna_Right</path>
+								</HumanlikeBaby>
+							</ageGraphics>
+							<offsets>
+								<north>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Thin>(0.0, 0.0)</Thin>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0,0)</Child>
+									</bodyTypes>
+								</north>
+								<south>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Thin>(0.0, 0.0)</Thin>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.02,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0.02,0)</Child>
+									</bodyTypes>
+								</south>
+								<east>
+									<bodyTypes>
+										<Female>(0.0, 0.0)</Female>
+										<Thin>(0.0, 0.0)</Thin>
+										<Baby MayRequire="Ludeon.RimWorld.Biotech">(0.0,0)</Baby>
+										<Child MayRequire="Ludeon.RimWorld.Biotech">(0.0,0)</Child>
+									</bodyTypes>
+								</east>
+							</offsets>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>MoyoTuque</li>
+							</hiddenUnderApparelTag>
+						</li>
+						<li>
+							<path>Moyo/Dummy/Dummy</path>
+							<bodyPart>Head</bodyPart>
+							<inFrontOfBody>true</inFrontOfBody>
+							<colorChannel>hair</colorChannel>
+							<alignWithHead>true</alignWithHead>
+							<drawSize>0.6666</drawSize>
+							<ageGraphics MayRequire="Ludeon.RimWorld.Biotech">
+								<HumanlikeBaby>
+									<path>Moyo/Hairs/MYFluffy</path>
+								</HumanlikeBaby>
+							</ageGraphics>
+							<offsets>
+								<north>
+									<layerOffset>-0.001</layerOffset>
+								</north>
+								<south>
+									<layerOffset>-0.001</layerOffset>
+								</south>
+								<east>
+									<layerOffset>-0.001</layerOffset>
+								</east>
+							</offsets>
+							<hiddenUnderApparelFor>
+								<li>FullHead</li>
+							</hiddenUnderApparelFor>
+							<hiddenUnderApparelTag>
+								<li>MoyoTuque</li>
+							</hiddenUnderApparelTag>
+						</li>
+					</bodyAddons>
+					<colorChannels>
+						<li>
+							<name>skin</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>10</weight>
+										<only>(255,255,255,255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+						<li>
+							<name>hair</name>
+							<first Class="ColorGenerator_Options">
+								<options>
+									<li>
+										<weight>100</weight>
+										<only>(255,255,255,255)</only>
+									</li>
+								</options>
+							</first>
+						</li>
+					</colorChannels>
+				</alienPartGenerator>
+			</generalSettings>
+			<graphicPaths>
+					<skinShader>CutoutComplex</skinShader>
+					<head>RedMoyo/Heads/</head>
+					<body>RedMoyo/Body/</body>
+					<skeleton>Things/Pawn/Humanlike/Bodies/Dessicated/Dessicated_Thin</skeleton>
+			</graphicPaths>
+			<thoughtSettings>
+				<cannotReceiveThoughts>
+					<li>SoakingWet</li>
+				</cannotReceiveThoughts>
+			</thoughtSettings>
+			<styleSettings>
+				<li>
+					<key>HairDef</key>
+					<value>
+						<hasStyle>true</hasStyle>
+						<styleTagsOverride>
+                            <li>Moyo_HairCategory</li>
+                        </styleTagsOverride>
+					</value>
+				</li>
+				<li>
+					<key>TattooDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+				<li>
+					<key>BeardDef</key>
+					<value>
+						<hasStyle>false</hasStyle>
+					</value>
+				</li>
+			</styleSettings>
+			<raceRestriction>
+				<onlyUseRaceRestrictedApparel>false</onlyUseRaceRestrictedApparel>
+				<apparelList>
+					<li>Moyo_Tribal</li>
+					<li>Moyo_Parka</li>
+					<li>Moyo_Jacket</li>
+					<li>Moyo_Duster</li>
+					<li>Moyo_SnB</li>
+					<li>Moyo_RoyalRobeA</li>
+					<li>Moyo_RoyalRobeB</li>
+					<li>Moyo_RoyalRobeC</li>
+					<li>Moyo_RoyalBlackDress</li>
+					<li>Moyo_Tuque</li>
+					<li>Moyo_BowlerHat</li>
+					<li>Moyo_CowboyHat</li>
+					<li>Moyo_RoyalHologramA</li>
+					<li>Moyo_RoyalHologramB</li>
+					<li>Moyo_RoyalHologramC</li>
+					<li>Moyo_EGsuit</li>
+					<li>Moyo_EGmask</li>
+					<li>Moyo_SShelmet</li>
+					<li>Moyo_PShelmet</li>
+					<li>Moyo_LDgear</li>
+					<li>Moyo_LDhelmet</li>
+					<li>Moyo_DDgear</li>
+					<li>Moyo_DDhelmet</li>
+					<li>Moyo_GSsuit</li>
+					<li>Moyo_GShelmet</li>
+					<li>Moyo_GDsuit</li>
+					<li>Moyo_GDhelmet</li>
+					<li>Moyo_Evasuit</li>
+					<li>Moyo_Bodysuit</li>
+					<li>Moyo_Royalsuit</li>
+					<li>Moyo_HoloJacket</li>
+					<li>Moyo_Holosuit</li>
+					<li>RedMoyo_BodyStrap</li>
+					<li>RedMoyo_BobySuit</li>
+					<li>RedMoyo_TacticalStrap</li>
+					<li>RedMoyo_PoliceUniform</li>
+					<li>RedMoyo_HoloCamisole</li>
+					<li>RedMoyo_ExoSkeleton</li>
+					<li>RedMoyo_WorkSuit</li>
+					<li>RedMoyo_OfficerCape</li>
+					<li>RedMoyo_TacticalGears</li>
+					<li>RedMoyo_Helmet</li>
+					<li>RedMoyo_PanHat</li>
+					<li>RedMoyo_MeleeMask</li>
+					<li>RedMoyo_SniperMask</li>
+					<li>RedMoyo_GasMask</li>
+					<li>RedMoyo_TacticalHeadSet</li>
+					<li>RedMoyo_AbyssArmour</li>
+					<li>RedMoyo_AbyssHelmet</li>
+				</apparelList>
+			</raceRestriction>
+		</alienRace>
+		<!--=============================================================================================================================-->
+		<statBases>
+			<MarketValue>2800</MarketValue>
+			<RoyalFavorValue>2</RoyalFavorValue>
+			
+			<Flammability>0.35</Flammability>
+			<MoveSpeed>4.5</MoveSpeed>
+			
+	
+			<ComfyTemperatureMax>30</ComfyTemperatureMax>
+			<ComfyTemperatureMin>10</ComfyTemperatureMin>
+			<InjuryHealingFactor>1.2</InjuryHealingFactor>				
+			<RestRateMultiplier>1.2</RestRateMultiplier>
+			<EatingSpeed>2</EatingSpeed>
+			
+			<FoodPoisonChance>0</FoodPoisonChance>
+			<ImmunityGainSpeed>1.35</ImmunityGainSpeed>
+			
+			<CarryingCapacity>150</CarryingCapacity>
+			<MeatAmount>100</MeatAmount>
+			<LeatherAmount>60</LeatherAmount>
+			<Mass>90</Mass>
+			<PsychicSensitivity>0.05</PsychicSensitivity>
+			<MeleeDodgeChance>0.85</MeleeDodgeChance>
+			<SocialImpact>0.55</SocialImpact>
+			<GeneralLaborSpeed>1.15</GeneralLaborSpeed>
+			
+			<DrugSynthesisSpeed>1.0</DrugSynthesisSpeed>
+			<MedicalTendSpeed>1.2</MedicalTendSpeed>
+			<MedicalTendQuality>1.0</MedicalTendQuality>
+			<MedicalSurgerySuccessChance>1.00</MedicalSurgerySuccessChance>
+			
+			<AimingDelayFactor>0.75</AimingDelayFactor>
+		</statBases>
+		<!--==맨손전투===================================================================================================================-->
+		<tools>
+			<li>
+				<label>left fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right fist</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>14</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>teeth</label>
+				<capacities>
+					<li>Bite</li>
+				</capacities>
+				<power>8.2</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.07</chanceFactor>
+				<soundMeleeHit>Pawn_Melee_HumanBite_Hit</soundMeleeHit>
+				<soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>6</power>
+				<cooldownTime>2</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.2</chanceFactor>
+			</li>
+		</tools>
+		<!--=============================================================================================================================-->
+		<race>
+			<thinkTreeMain>Humanlike</thinkTreeMain>
+			<thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+			<intelligence>Humanlike</intelligence>
+			<makesFootprints>true</makesFootprints>
+			<lifeExpectancy>50</lifeExpectancy>
+			<!-- Gore -->
+			<leatherDef>Leather_Human</leatherDef>
+			<bloodDef>Moyo_Blood</bloodDef>
+			<fleshType>Moyo_Flesh</fleshType>
+			<meatMarketValue>0.8</meatMarketValue>
+			<meatColor>(131, 51, 65)</meatColor>
+			<!-- Gore -->
+			<nameCategory>HumanStandard</nameCategory>
+			<hasGenders>true</hasGenders>
+			<body>Moyo</body>
+			<baseHungerRate>0.75</baseHungerRate>
+			<baseBodySize>1.1</baseBodySize>
+			<baseHealthScale>1.2</baseHealthScale>
+			<foodType>OmnivoreHuman</foodType>
+			<gestationPeriodDays>30</gestationPeriodDays>
+			<litterSizeCurve>
+				<points>
+					<li>(0.5, 0)</li>
+					<li>(1, 1)</li>
+					<li>(1.01, 0.02)</li>
+					<li>(3.5, 0)</li>
+				</points>
+			</litterSizeCurve>
+			<lifeStageAges>
+				<li Class="AlienRace.LifeStageAgeAlien" MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikeBaby</def>
+					<minAge>0</minAge>
+					<headOffset>(0, -0.06)</headOffset>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien" MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikeChild</def>
+					<minAge>3</minAge>
+					<headOffset>(0, -0.09)</headOffset>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien" MayRequire="Ludeon.RimWorld.Biotech">
+					<def>HumanlikePreTeenager</def>
+					<minAge>9</minAge>
+					<headOffset>(0, -0.09)</headOffset>
+					<customDrawSize>(1.25,1.25)</customDrawSize>
+					<customPortraitDrawSize>(1.25,1.25)</customPortraitDrawSize>
+					<customHeadDrawSize>(1.25,1.25)</customHeadDrawSize>
+					<customPortraitHeadDrawSize>(1.25,1.25)</customPortraitHeadDrawSize>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>RedMoyoTeenager</def>
+					<minAge>13</minAge>
+				</li>
+				<li Class="AlienRace.LifeStageAgeAlien">
+					<def>HumanlikeAdult</def>
+					<minAge>18</minAge>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+			<specialShadowData>
+				<volume>(0.3, 0.8, 0.4)</volume>
+				<offset>(0,0,-0.3)</offset>
+			</specialShadowData>
+			<ageGenerationCurve>
+				<points>
+					<li>(14,0)</li>
+					<li>(16,60)</li>
+					<li>(22,100)</li>
+					<li>(30,30)</li>
+					<li>(60,5)</li>
+					<li>(80,1)</li>
+					<li>(100,0)</li>
+				</points>
+			</ageGenerationCurve>
+			<hediffGiverSets>
+				<li>MoyoInate</li>
+				<li>Human</li>
+			</hediffGiverSets>
+		</race>
+		<!--=============================================================================================================================-->
+		<comps>
+			<li Class="HPF_Moyo.CompProperties_ResourceHarvestable">
+				<harvestJobDef>ExtractDeepBlue_Job</harvestJobDef>
+				<saveUniqueKey>HPFDeepBlueFullness</saveUniqueKey>
+				<thingDef>RedMoyo_BloodBag</thingDef>
+				<intervalDays>7.5</intervalDays>
+				<amount>1</amount>
+				<inspectText>BloodBag</inspectText>
+				<constraints>
+					<li Class="HPF_Moyo.ConstraintPawnAgeOver">
+						<age>7</age>
+					</li>
+				</constraints>
+				<productAffectedStats>
+					<li>
+						<statDef>ImmunityGainSpeed</statDef>
+						<multiplier>2.0</multiplier>
+						<offset>-1.0</offset>
+					</li>
+					<li>
+						<statDef>DeepblueStat</statDef>
+						<multiplier>1.0</multiplier>
+						<offset>-1.0</offset>
+					</li>
+				</productAffectedStats>
+				<speedAffectedStats>
+					<li>
+						<statDef>DeepblueStatSpeed</statDef>
+						<multiplier>1.0</multiplier>
+						<offset>-1.0</offset>
+					</li>
+				</speedAffectedStats>
+			</li>
+		</comps>
+		<!--=============================================================================================================================-->
+		<recipes>
+			<li>ExciseCarcinoma</li>
+			<li>AdministerMechSerumHealer</li>
+			<li>RemoveBodyPart</li>
+			<li>Euthanize</li>
+			<li>Anesthetize</li>
+			<li>CureScaria</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureBloodRot</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CureAbasia</li>
+		</recipes>
+	</AlienRace.ThingDef_AlienRace>
+	
+	<LifeStageDef ParentName="HumanlikeAdolescent">
+		<defName>RedMoyoTeenager</defName>
+		<label>teenager</label>
+		<workerClass MayRequire="Ludeon.RimWorld.Biotech">LifeStageWorker_HumanlikeAdult</workerClass>
+		<adjective>teenage</adjective>
+		<reproductive>true</reproductive>
+		<bodySizeFactor>1</bodySizeFactor>
+		<healthScaleFactor>0.90</healthScaleFactor>
+		<foodMaxFactor>1.25</foodMaxFactor>
+		<meleeDamageFactor>0.75</meleeDamageFactor>
+		<equipmentDrawDistanceFactor>0.65</equipmentDrawDistanceFactor>
+		<sittingOffset>0.23</sittingOffset>
+		<statFactors>
+			<MoveSpeed>0.95</MoveSpeed>
+		</statFactors>
+	</LifeStageDef>
+</Defs>

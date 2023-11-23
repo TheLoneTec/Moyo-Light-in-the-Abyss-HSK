@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RedMoyo_ColonistPawn.label>red moyo colonist</RedMoyo_ColonistPawn.label>
+  <RedMoyo_ColonistPawn.labelPlural>red moyo colonists</RedMoyo_ColonistPawn.labelPlural>
+  <RedMoyo_ColonistPawn.labelMale>male red moyo colonist</RedMoyo_ColonistPawn.labelMale>
+  <RedMoyo_ColonistPawn.labelMalePlural>male red moyo colonists</RedMoyo_ColonistPawn.labelMalePlural>
+  <RedMoyo_ColonistPawn.labelFemale>female red moyo colonist</RedMoyo_ColonistPawn.labelFemale>
+  <RedMoyo_ColonistPawn.labelFemalePlural>female red moyo colonists</RedMoyo_ColonistPawn.labelFemalePlural>
+
+
+  <!-- 平民 -->
+
+  <RedMoyo_Slave.label>moyo slave</RedMoyo_Slave.label>
+  <RedMoyo_Slave.labelPlural>moyo slaves</RedMoyo_Slave.labelPlural>
+  <RedMoyo_Slave.labelMale>male moyo slave</RedMoyo_Slave.labelMale>
+  <RedMoyo_Slave.labelMalePlural>male moyo slaves</RedMoyo_Slave.labelMalePlural>
+  <RedMoyo_Slave.labelFemale>female moyo slave</RedMoyo_Slave.labelFemale>
+  <RedMoyo_Slave.labelFemalePlural>female moyo slaves</RedMoyo_Slave.labelFemalePlural>
+
+  <RedMoyo_Civilan.label>red moyo civilian</RedMoyo_Civilan.label>
+  <RedMoyo_Civilan.labelPlural>red moyo civilians</RedMoyo_Civilan.labelPlural>
+  <RedMoyo_Civilan.labelMale>male red moyo civilian</RedMoyo_Civilan.labelMale>
+  <RedMoyo_Civilan.labelMalePlural>male red moyo civilians</RedMoyo_Civilan.labelMalePlural>
+  <RedMoyo_Civilan.labelFemale>female red moyo civilian</RedMoyo_Civilan.labelFemale>
+  <RedMoyo_Civilan.labelFemalePlural>female red moyo civilians</RedMoyo_Civilan.labelFemalePlural>
+
+  <RedMoyo_Engineer.label>red moyo ship breaker</RedMoyo_Engineer.label>
+  <RedMoyo_Engineer.labelPlural>red moyo ship breakers</RedMoyo_Engineer.labelPlural>
+  <RedMoyo_Engineer.labelMale>male red moyo ship breaker</RedMoyo_Engineer.labelMale>
+  <RedMoyo_Engineer.labelMalePlural>male red moyo ship breakers</RedMoyo_Engineer.labelMalePlural>
+  <RedMoyo_Engineer.labelFemale>female red moyo ship breaker</RedMoyo_Engineer.labelFemale>
+  <RedMoyo_Engineer.labelFemalePlural>female red moyo ship breakers</RedMoyo_Engineer.labelFemalePlural>
+
+  <RedMoyo_Hunter.label>red moyo abyss hunter</RedMoyo_Hunter.label>
+  <RedMoyo_Hunter.labelPlural>red moyo abyss hunters</RedMoyo_Hunter.labelPlural>
+  <RedMoyo_Hunter.labelMale>male red moyo abyss hunter</RedMoyo_Hunter.labelMale>
+  <RedMoyo_Hunter.labelMalePlural>male red moyo abyss hunters</RedMoyo_Hunter.labelMalePlural>
+  <RedMoyo_Hunter.labelFemale>female red moyo abyss hunter</RedMoyo_Hunter.labelFemale>
+  <RedMoyo_Hunter.labelFemalePlural>female red moyo abyss hunters</RedMoyo_Hunter.labelFemalePlural>
+
+
+  <!-- 民兵 -->
+
+  <RedMoyo_Volunteer.label>moyo volunteer</RedMoyo_Volunteer.label>
+  <RedMoyo_Volunteer.labelPlural>moyo volunteers</RedMoyo_Volunteer.labelPlural>
+  <RedMoyo_Volunteer.labelMale>male moyo volunteer</RedMoyo_Volunteer.labelMale>
+  <RedMoyo_Volunteer.labelMalePlural>male moyo volunteers</RedMoyo_Volunteer.labelMalePlural>
+  <RedMoyo_Volunteer.labelFemale>female moyo volunteer</RedMoyo_Volunteer.labelFemale>
+  <RedMoyo_Volunteer.labelFemalePlural>female moyo volunteers</RedMoyo_Volunteer.labelFemalePlural>
+
+
+  <!-- 騎警 -->
+
+  <RedMoyoRanger.label>moyo ranger</RedMoyoRanger.label>
+  <RedMoyoRanger.labelPlural>moyo rangers</RedMoyoRanger.labelPlural>
+  <RedMoyoRanger.labelMale>male moyo ranger</RedMoyoRanger.labelMale>
+  <RedMoyoRanger.labelMalePlural>male moyo rangers</RedMoyoRanger.labelMalePlural>
+  <RedMoyoRanger.labelFemale>female moyo ranger</RedMoyoRanger.labelFemale>
+  <RedMoyoRanger.labelFemalePlural>female moyo rangers</RedMoyoRanger.labelFemalePlural>
+
+
+  <!-- 武警 -->
+
+  <RedMoyoTrooper.label>moyo surge trooper</RedMoyoTrooper.label>
+  <RedMoyoTrooper.labelPlural>moyo surge troopers</RedMoyoTrooper.labelPlural>
+  <RedMoyoTrooper.labelMale>male moyo surge trooper</RedMoyoTrooper.labelMale>
+  <RedMoyoTrooper.labelMalePlural>male moyo surge troopers</RedMoyoTrooper.labelMalePlural>
+  <RedMoyoTrooper.labelFemale>female moyo surge trooper</RedMoyoTrooper.labelFemale>
+  <RedMoyoTrooper.labelFemalePlural>female moyo surge troopers</RedMoyoTrooper.labelFemalePlural>
+
+
+  <!-- 督導員 -->
+
+  <RedMoyoSupervisor.label>moyo tactical supervisor</RedMoyoSupervisor.label>
+  <RedMoyoSupervisor.labelPlural>moyo tactical supervisors</RedMoyoSupervisor.labelPlural>
+  <RedMoyoSupervisor.labelMale>male moyo tactical supervisor</RedMoyoSupervisor.labelMale>
+  <RedMoyoSupervisor.labelMalePlural>male moyo tactical supervisors</RedMoyoSupervisor.labelMalePlural>
+  <RedMoyoSupervisor.labelFemale>female moyo tactical supervisor</RedMoyoSupervisor.labelFemale>
+  <RedMoyoSupervisor.labelFemalePlural>female moyo tactical supervisors</RedMoyoSupervisor.labelFemalePlural>
+
+
+  <!-- 海軍陸戰隊 -->
+
+  <RedMoyoMarine.label>moyo abyss marine</RedMoyoMarine.label>
+  <RedMoyoMarine.labelPlural>moyo abyss marines</RedMoyoMarine.labelPlural>
+  <RedMoyoMarine.labelMale>male moyo abyss marine</RedMoyoMarine.labelMale>
+  <RedMoyoMarine.labelMalePlural>male moyo abyss marines</RedMoyoMarine.labelMalePlural>
+  <RedMoyoMarine.labelFemale>female moyo abyss marine</RedMoyoMarine.labelFemale>
+  <RedMoyoMarine.labelFemalePlural>female moyo abyss marines</RedMoyoMarine.labelFemalePlural>
+
+
+  <!-- 衛光人 -->
+
+  <RedMoyoLightkeeper.label>moyo Light keeper</RedMoyoLightkeeper.label>
+  <RedMoyoLightkeeper.labelPlural>moyo Light keepers</RedMoyoLightkeeper.labelPlural>
+  <RedMoyoLightkeeper.labelMale>male moyo Light keeper</RedMoyoLightkeeper.labelMale>
+  <RedMoyoLightkeeper.labelMalePlural>male moyo Light keepers</RedMoyoLightkeeper.labelMalePlural>
+  <RedMoyoLightkeeper.labelFemale>female moyo Light keeper</RedMoyoLightkeeper.labelFemale>
+  <RedMoyoLightkeeper.labelFemalePlural>female moyo Light keepers</RedMoyoLightkeeper.labelFemalePlural>
+
+
+  <!-- 潛淵者 -->
+
+  <RedMoyoAbyssDiver.label>moyo abyss diver</RedMoyoAbyssDiver.label>
+  <RedMoyoAbyssDiver.labelPlural>moyo abyss divers</RedMoyoAbyssDiver.labelPlural>
+  <RedMoyoAbyssDiver.labelMale>male moyo abyss diver</RedMoyoAbyssDiver.labelMale>
+  <RedMoyoAbyssDiver.labelMalePlural>male moyo abyss divers</RedMoyoAbyssDiver.labelMalePlural>
+  <RedMoyoAbyssDiver.labelFemale>female moyo abyss diver</RedMoyoAbyssDiver.labelFemale>
+  <RedMoyoAbyssDiver.labelFemalePlural>female moyo abyss divers</RedMoyoAbyssDiver.labelFemalePlural>
+
+
+  <!-- 潛淵者(遠程) -->
+
+  <RedMoyoAbyssDiverRanged.label>moyo abyss diver</RedMoyoAbyssDiverRanged.label>
+  <RedMoyoAbyssDiverRanged.labelPlural>moyo abyss divers</RedMoyoAbyssDiverRanged.labelPlural>
+  <RedMoyoAbyssDiverRanged.labelMale>male moyo abyss diver</RedMoyoAbyssDiverRanged.labelMale>
+  <RedMoyoAbyssDiverRanged.labelMalePlural>male moyo abyss divers</RedMoyoAbyssDiverRanged.labelMalePlural>
+  <RedMoyoAbyssDiverRanged.labelFemale>female moyo abyss diver</RedMoyoAbyssDiverRanged.labelFemale>
+  <RedMoyoAbyssDiverRanged.labelFemalePlural>female moyo abyss divers</RedMoyoAbyssDiverRanged.labelFemalePlural>
+
+
+  <!-- 領航員 -->
+
+  <RedMoyo_leader.label>moyo navigator</RedMoyo_leader.label>
+  <RedMoyo_leader.labelPlural>moyo navigators</RedMoyo_leader.labelPlural>
+  <RedMoyo_leader.labelMale>male moyo navigator</RedMoyo_leader.labelMale>
+  <RedMoyo_leader.labelMalePlural>male moyo navigators</RedMoyo_leader.labelMalePlural>
+  <RedMoyo_leader.labelFemale>female moyo navigator</RedMoyo_leader.labelFemale>
+  <RedMoyo_leader.labelFemalePlural>female moyo navigators</RedMoyo_leader.labelFemalePlural>
+
+
+</LanguageData>

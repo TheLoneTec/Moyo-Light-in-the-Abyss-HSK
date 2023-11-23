@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+<RedMoyo_BloodBag.label>红色血浆袋</RedMoyo_BloodBag.label>
+  <RedMoyo_BloodBag.description>不详的深红色血袋，装满了受利维坦玷污的少女鲜血。</RedMoyo_BloodBag.description>
+
+  <CrimsonSerum.label>赤红原液</CrimsonSerum.label>
+  <CrimsonSerum.description>从深渊茉约体内抽取的血液，由于受到了深渊利维坦病毒的污染而呈现不详的鲜红色。 \n\n当注射进人体时，赤红原液会如同深蓝血清一样加速人体的新陈代谢，但与之不同的是，它会使对象导致心理失聪并更具……攻击性。目前没有已知的方法来逆转这个过程。 \n\n对利维坦病毒有着较高的抗性的茉约族来说只有在长期浸泡于病毒液体中或透过母婴垂直传染的状况下才有可能感染，因此直接的注射并不会产生任何效果。</CrimsonSerum.description>
+  <CrimsonSerum.ingestible.ingestCommandString>注射 {0}</CrimsonSerum.ingestible.ingestCommandString>
+  <CrimsonSerum.ingestible.ingestReportString>注入 {0}。</CrimsonSerum.ingestible.ingestReportString>
+
+
+</LanguageData>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<FactionDef ParentName="FactionBase" Abstract="True" Name="RedMoyo_PlayerBase">
+		<settlementTexturePath>RedMoyo/Settlement</settlementTexturePath>
+		<colorSpectrum>
+			<li>(65, 65, 150)</li>
+		</colorSpectrum>
+	</FactionDef>
+	<!-- player -->
+	<FactionDef ParentName="RedMoyo_PlayerBase">
+		<defName>RedMoyo_PlayerFaction</defName>
+		<label>Stranded refugees</label>
+		<description>A settlement made by the red moyo who have landed on the surface.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>RedMoyo_ColonistPawn</basicMemberKind>
+		<pawnSingular>colonist</pawnSingular>
+		<pawnsPlural>colonists</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<allowedCultures>
+			<li>RedMoyo_Culture</li>
+		</allowedCultures>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<factionIconPath>RedMoyo/Moyo_AbyssIcon</factionIconPath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+			<li>MoyoStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Moyo_Depthweave</li>
+			</thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+	<!-- RedMoyo -->
+	<FactionDef ParentName="FactionBase" Name="RedMoyoFactionBase" Abstract="True">
+		<pawnSingular>Red Moyo</pawnSingular>
+		<pawnsPlural>Red Moyos</pawnsPlural>
+		<listOrderPriority>30</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>4</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>60</configurationListOrderPriority>
+		<canMakeRandomly>true</canMakeRandomly>
+		<leaderTitle>Navigator</leaderTitle>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<techLevel>Spacer</techLevel>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Guilty</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Rancher</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistEmbodied</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Structure_TheistAbstract</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>			
+		</disallowedMemes>
+		<structureMemeWeights>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">3</Structure_Ideological>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+		</structureMemeWeights>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.95</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.05</commonality>
+			</li>
+		</backstoryFilters>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Moyo_Depthweave</li>
+			</thingDefs>
+			<stuffCategoriesToAllow>
+				<li>Metallic</li>
+				<li>Fabric</li>
+			</stuffCategoriesToAllow>
+			<disallowedThingDefs>
+				<li>Leather_Thrumbo</li>
+				<li>Hyperweave</li>
+			</disallowedThingDefs>
+		</apparelStuffFilter>
+		<caravanTraderKinds>
+			<li>Caravan_MoyoCivil_BulkGoods</li>
+			<li>Caravan_MoyoCivil_CombatSupplier</li>
+			<li>Caravan_MoyoCivil_Exotic</li>
+			<li>Caravan_MoyoCivil_PirateMerchant</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Outlander_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_MoyoCivil_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>-50~35</allowedArrivalTemperatureRange>
+		<raidLootMaker>MoyoRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(500, 100)</li>
+				<li>(1000, 150)</li>
+				<li>(2000, 250)</li>
+				<li>(2001, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<!-- 維安民兵 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<RedMoyo_Volunteer>10</RedMoyo_Volunteer>
+					<RedMoyoRanger>5</RedMoyoRanger>
+					<RedMoyo_Slave>2</RedMoyo_Slave>
+					<RedMoyo_Hunter>5</RedMoyo_Hunter>
+					<RedMoyo_Engineer>5</RedMoyo_Engineer>
+				</options>
+			</li>
+			<!-- 巡警 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>5</commonality>
+				<options>
+					<RedMoyoRanger>10</RedMoyoRanger>
+					<RedMoyo_Volunteer>10</RedMoyo_Volunteer>
+				</options>
+			</li>
+			<!-- 武裝警察支部 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<RedMoyoTrooper>20</RedMoyoTrooper>
+					<Moyo_SoliderStandard>5</Moyo_SoliderStandard>
+					<RedMoyoRanger>20</RedMoyoRanger>
+					<MoyoHexapod_Kind>1</MoyoHexapod_Kind>
+				</options>
+			</li>
+			<!-- 浪潮特遣隊 -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>80</commonality>
+				<options>
+					<RedMoyoTrooper>30</RedMoyoTrooper>
+					<RedMoyoAbyssDiverRanged>20</RedMoyoAbyssDiverRanged>
+					<RedMoyoMarine>25</RedMoyoMarine>
+					<RedMoyoLightkeeper>5</RedMoyoLightkeeper>
+					<RedMoyoSupervisor>2</RedMoyoSupervisor>
+					<MoyoPressurePod_Kind>1</MoyoPressurePod_Kind>
+					<MoyoHexapod_Kind>1</MoyoHexapod_Kind>
+					<RedMoyo_leader>1</RedMoyo_leader>
+				</options>
+			</li>
+			<li>
+				<!-- leader -->
+				<kindDef>Combat</kindDef>
+				<commonality>0</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Moyo_leader>1</Moyo_leader>
+				</options>
+			</li>
+			<li>
+			<!-- 母艦護衛隊 -->
+				<kindDef>Settlement</kindDef>
+				<options>
+					<RedMoyo_leader>1</RedMoyo_leader>
+					<RedMoyoAbyssDiverRanged>20</RedMoyoAbyssDiverRanged>
+					<RedMoyoAbyssDiver>10</RedMoyoAbyssDiver>
+					<RedMoyoMarine>25</RedMoyoMarine>
+					<RedMoyoLightkeeper>15</RedMoyoLightkeeper>
+					<MoyoPressurePod_Kind>3</MoyoPressurePod_Kind>
+					<MoyoHexapod_Kind>3</MoyoHexapod_Kind>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<RedMoyo_Civilan>50</RedMoyo_Civilan>
+					<Moyo_BottomCivilan>1</Moyo_BottomCivilan>
+					<Moyo_Engineer>15</Moyo_Engineer>
+					<RedMoyo_Slave>15</RedMoyo_Slave>
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Moyo_BottomCivilan>1</Moyo_BottomCivilan>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<RedMoyo_Volunteer>8</RedMoyo_Volunteer>
+					<RedMoyo_Slave>10</RedMoyo_Slave>
+					<RedMoyo_Civilan>20</RedMoyo_Civilan>
+					<RedMoyoRanger>10</RedMoyoRanger>
+					<RedMoyoLightkeeper>2</RedMoyoLightkeeper>
+					<Moyo_SoldierLight>2</Moyo_SoldierLight>
+					<RedMoyo_Hunter>5</RedMoyo_Hunter>
+					<RedMoyo_Engineer>5</RedMoyo_Engineer>
+				</guards>
+			</li>
+		</pawnGroupMakers>
+	</FactionDef>
+	<FactionDef ParentName="RedMoyoFactionBase">
+		<defName>RedMoyo_Faction</defName>
+		<label>moyo stranded mothership</label>
+		<description>A settlement of red moyo.</description>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<settlementTexturePath>RedMoyo/Settlement</settlementTexturePath>
+		<factionIconPath>RedMoyo/Moyo_AbyssIcon</factionIconPath>
+		<colorSpectrum>
+			<li>(160, 60, 80)</li>
+		</colorSpectrum>
+	</FactionDef>
+</Defs>
